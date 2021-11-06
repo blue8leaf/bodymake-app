@@ -1,5 +1,69 @@
 <%= render "devise/shared/header"%>
 
+<div class='report-contents'>
+  <div class="report-title" >
+    <%= link_to current_user.nickname, "#{current_user.nickname}", class: "link-text" %>
+    <span class="index-unit">さんの記録</span>
+  </div>
 
+  <div class='report-lists'>
+    <% @reports.each do |report| %>
+
+      <%# <%= link_to report_path(report.id), class: "link-text" do %> 
+
+      <table class="report-table">  
+        <tbody>
+          <tr class="detail-report">
+            <th class="detail-date">登録日</th>
+            <td class="detail-value-data"><%= report.registration_date %></td>
+          </tr>
+          <tr class="detail-report">
+            <th class="detail-unit">体重</th>
+            <td class="detail-value"><%= report.body_weight %></td>
+          </tr>
+          <tr class="detail-report">
+            <th class="detail-unit">体脂肪</th>
+            <td class="detail-value"><%= report.body_fat %></td>
+          </tr>
+          <tr class="detail-report">
+            <th class="detail-unit">バスト</th>
+            <td class="detail-value"><%= report.body_bust %></td>
+          </tr>
+          <tr class="detail-report">
+            <th class="detail-unit">二の腕</th>
+            <td class="detail-value"><%= report.body_arm %></td>
+          </tr>
+          <tr class="detail-report">
+            <th class="detail-unit">ウエスト</th>
+            <td class="detail-value"><%= report.body_west %></td>
+          </tr>
+          <tr class="detail-report">
+            <th class="detail-unit">下腹</th>
+            <td class="detail-value"><%= report.body_belly %></td>
+          </tr>
+          <tr class="detail-report">
+            <th class="detail-unit">ヒップ</th>
+            <td class="detail-value"><%= report.body_hip %></td>
+          </tr>
+          <tr class="detail-report">
+            <th class="detail-unit">太もも</th>
+            <td class="detail-value"><%= report.body_thigh %></td>
+          </tr>
+          <tr class="detail-report">
+            <th class="detail-unit">ふくらはぎ</th>
+            <td class="detail-value"><%= report.body_calf %></td>
+          </tr>
+          <tr class="detail-report">
+            <th class="detail-unit">足首</th>
+            <td class="detail-value"><%= report.body_ankle %></td>
+          </tr>
+        </tbody>
+      </table>
+
+      <%# <% end %> 
+
+    <% end %>
+  </div>
+</div>
 
 <%= render "devise/shared/footer"%>
