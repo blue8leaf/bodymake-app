@@ -1,0 +1,147 @@
+<%= render "devise/shared/header" %>
+
+<div class='report-contents'>
+  <div class='report-show'>
+
+    <table class="report-table">
+      <tbody>
+        <tr class="detail-report">
+          <th class="detail-date">登録日</th>
+          <td class="detail-value-data"><%= @report.registration_date %></td>
+        </tr>
+        <tr class="detail-report">
+          <th class="detail-unit">体重</th>
+          <td class="detail-value"><%= @report.body_weight %></td>
+        </tr>
+        <tr class="detail-report">
+          <th class="detail-unit">体脂肪</th>
+          <td class="detail-value"><%= @report.body_fat %></td>
+        </tr>
+        <tr class="detail-report">
+          <th class="detail-unit">バスト</th>
+          <td class="detail-value"><%= @report.body_bust %></td>
+        </tr>
+        <tr class="detail-report">
+          <th class="detail-unit">二の腕</th>
+          <td class="detail-value"><%= @report.body_arm %></td>
+        </tr>
+        <tr class="detail-report">
+          <th class="detail-unit">ウエスト</th>
+          <td class="detail-value"><%= @report.body_west %></td>
+        </tr>
+        <tr class="detail-report">
+          <th class="detail-unit">下腹</th>
+          <td class="detail-value"><%= @report.body_belly %></td>
+        </tr>
+        <tr class="detail-report">
+          <th class="detail-unit">ヒップ</th>
+          <td class="detail-value"><%= @report.body_hip %></td>
+        </tr>
+        <tr class="detail-report">
+          <th class="detail-unit">太もも</th>
+          <td class="detail-value"><%= @report.body_thigh %></td>
+        </tr>
+        <tr class="detail-report">
+          <th class="detail-unit">ふくらはぎ</th>
+          <td class="detail-value"><%= @report.body_calf %></td>
+        </tr>
+        <tr class="detail-report">
+          <th class="detail-unit">足首</th>
+          <td class="detail-value"><%= @report.body_ankle %></td>
+        </tr>
+      </tbody>
+    </table>
+
+    <div class='img-content'>
+      <%= image_tag @report.image ,class:"report-img" %>
+    </div>
+
+
+
+  </div>
+  
+  <div class= "report-chart">
+    <div class= "report-body">
+      <span class="report-unit">体重</span>
+      <%= line_chart Report.group(:registration_date).sum(:body_weight),
+                 curve: false,
+                 width: '900px',
+                 height: '300px',
+                 colors: ['#A57C55'] %>
+    </div>
+    <div class= "report-body">
+      <span class="report-unit">体脂肪</span>
+      <%= line_chart Report.group(:registration_date).sum(:body_fat),
+                 curve: false,
+                 width: '900px',
+                 height: '300px',
+                 colors: ['#A57C55'] %>
+    </div>
+    <div class= "report-body">
+      <span class="report-unit">バスト</span>
+      <%= line_chart Report.group(:registration_date).sum(:body_bust),
+                 curve: false,
+                 width: '900px',
+                 height: '300px',
+                 colors: ['#A57C55'] %>
+    </div>
+    <div class= "report-body">
+      <span class="report-unit">二の腕</span>
+      <%= line_chart Report.group(:registration_date).sum(:body_arm),
+                 curve: false,
+                 width: '900px',
+                 height: '300px',
+                 colors: ['#A57C55'] %>
+    </div>
+    <div class= "report-body">
+      <span class="report-unit">ウエスト</span>
+      <%= line_chart Report.group(:registration_date).sum(:body_west),
+                 curve: false,
+                 width: '900px',
+                 height: '300px',
+                 colors: ['#A57C55'] %>
+    </div>
+    <div class= "report-body">
+      <span class="report-unit">下腹</span>
+      <%= line_chart Report.group(:registration_date).sum(:body_belly),
+                 curve: false,
+                 width: '900px',
+                 height: '300px',
+                 colors: ['#A57C55'] %>
+    </div>
+    <div class= "report-body">
+      <span class="report-unit">ヒップ</span>
+      <%= line_chart Report.group(:registration_date).sum(:body_hip),
+                 curve: false,
+                 width: '900px',
+                 height: '300px',
+                 colors: ['#A57C55'] %>
+    </div>
+    <div class= "report-body">
+      <span class="report-unit">太もも</span>
+      <%= line_chart Report.group(:registration_date).sum(:body_thigh),
+                 curve: false,
+                 width: '900px',
+                 height: '300px',
+                 colors: ['#A57C55'] %>
+    </div>
+    <div class= "report-body">
+      <span class="report-unit">ふくらはぎ</span>
+      <%= line_chart Report.group(:registration_date).sum(:body_calf),
+                 curve: false,
+                 width: '900px',
+                 height: '300px',
+                 colors: ['#A57C55'] %>
+    </div>
+    <div class= "report-body">
+      <span class="report-unit">足首</span>
+      <%= line_chart Report.group(:registration_date).sum(:body_ankle),
+                 curve: false,
+                 width: '900px',
+                 height: '300px',
+                 colors: ['#A57C55'] %>
+    </div>
+  </div>
+</div>
+
+<%= render "devise/shared/footer" %>
