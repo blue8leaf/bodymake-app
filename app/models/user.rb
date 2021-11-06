@@ -15,8 +15,10 @@ class User < ApplicationRecord
     end
   end
 
-  validates :gender_id, numericality: { other_than: 0, message: "入力されていません" }
-  validates :age_id,    numericality: { other_than: 0, message: "入力されていません" }
+  with_options allow_blank: true do
+    validates :gender_id, numericality: { other_than: 0, message: "入力されていません" }
+    validates :age_id,    numericality: { other_than: 0, message: "入力されていません" }
+  end
 
   extend ActiveHash::Associations::ActiveRecordExtensions
   belongs_to :gender

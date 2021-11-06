@@ -4,8 +4,8 @@ FactoryBot.define do
     email {Faker::Internet.free_email}
     password { 'aaaa0000' }
     password_confirmation { password }
-    body_height_id { 154 }
-    objective_weight_id { 45 }
+    body_height { 154 }
+    objective_weight { 45 }
     profile {'よろしくお願い致します。'}
     gender_id { Gender.find_by(name: '女').id }
     age_id { Age.find_by(name: '20').id }
