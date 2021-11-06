@@ -1,0 +1,131 @@
+.report-contents {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 40px 0;
+}
+
+.report-title {
+  padding: 20px;
+}
+
+.link-text {
+  text-decoration: none;
+  font-size: 24px;
+  font-weight: bold;
+  color: #555;
+}
+
+.index-unit {
+  font-size: 24px;
+  font-weight: bold;
+  color: #555;
+}
+
+.report-lists {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+}
+
+.body-chart {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.report-body {
+  margin: 30px;
+  text-align: center;
+}
+
+.report-table {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 40px 0;
+}
+
+.detail-report {
+  width: 300px;
+  height: 50px;
+}
+
+.detail-date {
+  background-color: #f3f1ef;
+  border: 1px solid #ccc;
+  border-bottom: 2px solid #888;
+  font-size: 16px;
+  text-align: center;
+  padding: 20px;
+}
+
+.detail-value-data {
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-bottom: 2px solid #888;
+  font-size: 16px;
+}
+
+.detail-unit {
+  background-color: #f3f1ef;
+  border: 1px solid #ccc;
+  font-size: 14px;
+  text-align: center;
+}
+
+.detail-value {
+  padding: 20px;
+  border: 1px solid #ccc;
+  font-size: 14px;
+}
+
+.report-img-unit {
+  font-size: 14px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 10px;
+}
+
+.report-img {
+  height: 300px;
+  width: 400px;
+  background-color: #dedede;
+  -o-object-fit: contain;
+     object-fit: contain;
+  margin: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+/*# sourceMappingURL=index.html.css.map */

@@ -47,7 +47,7 @@
       <span class="indispensable">必須</span>
     </div>
     <div>
-      <%= f.text_field :body_height, class:"input-default", id:"body_height", placeholder:"155.5" %>
+      <%= f.text_field :body_height, class:"input-report", id:"body_height", placeholder:"155.5" %>
       <span class="form-unit">cm</span>
       <p class='info-text'>※半角数字・小数点第一位まで入力できます</p>
     </div>
@@ -57,9 +57,11 @@
       <label class="form-text">目標体重</label>
       <span class="indispensable">必須</span>
     </div>
-    <%= f.text_field :objective_weight, class:"input-default", id:"objective_weight", placeholder:"45" %>
-    <span class="form-unit">kg</span>
-    <p class='info-text'>※半角数字・小数点第一位まで入力できます</p>
+    <div>
+      <%= f.text_field :objective_weight, class:"input-report", id:"objective_weight", placeholder:"45" %>
+      <span class="form-unit">kg</span>
+      <p class='info-text'>※半角数字・小数点第一位まで入力できます</p>
+      </div>
   </div>
   <div class="form-group">
     <div class='form-text-wrap'>
