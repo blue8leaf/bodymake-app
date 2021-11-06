@@ -59,12 +59,6 @@ RSpec.describe Report, type: :model do
         @report.valid?
         expect(@report.errors.full_messages).to include("Registration date can't be blank")
       end
-      it '同じ日付は登録できない' do
-        @report.save
-        another_report = FactoryBot.build(:report, registration_date: @report.registration_date)
-        another_report.valid?
-        expect(another_report.errors.full_messages).to include("Registration date has already been taken")
-      end
       it '画像が添付されていないと登録できない' do
         @report.image = nil
         @report.valid?
