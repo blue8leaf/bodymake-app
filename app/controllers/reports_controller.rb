@@ -1,5 +1,6 @@
 class ReportsController < ApplicationController
   def index
+    @reports = Report.limit(2).order("id DESC")
   end
 
   def new
