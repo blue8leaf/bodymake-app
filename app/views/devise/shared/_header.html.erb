@@ -1,0 +1,27 @@
+<header class = 'header'>
+  <div class='title'>
+    <%= link_to 'Body make-up', root_path, class: "header-title" %>
+    <div class='menu'>
+      <div class='nav'>
+        <ul class='lists-left'>
+          <%# <li> <%= link_to '今日の記録', new_report_path, class: 'user-link'%> </li> %>
+        </ul>
+        <ul class='lists-right'>
+          <% if user_signed_in? %>
+            <li> <%= link_to current_user.nickname, "#{current_user.nickname}", class: "user-link" %></li>
+            <li> <%= link_to 'ログアウト', destroy_user_session_path, method: :delete, class: "user-link" %></li>
+          <% else %>
+            <li><%= link_to 'ログイン', new_user_session_path, class: "user-link" %></li>
+            <li><%= link_to '新規登録', new_user_registration_path, class: "user-link" %></li>
+          <% end %>
+        </ul>
+      </div>
+      <button class="mobile-menu-icon"
+      onclick="document.querySelector('body').classList.toggle('menu-open');">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </div>
+</header>
