@@ -1,0 +1,164 @@
+<%= render "devise/shared/header" %>
+
+<%= form_with model: @report, class: 'form-main', local: true do |f| %>
+<div class='form-wrap'>
+  <div class='form-header'>
+    <h1 class='form-header-text'>
+      今日の記録
+    </h1>
+  </div>
+  
+  <div class='date-select'>
+    <label class="form-text">登録日</label>
+    <%= f.date_field :registration_date, class:"calender-select", value:Time.now.strftime("%Y-%m-%d") %>
+  </div>
+
+  <%# インスタンスを渡して、エラー発生時にメッセージを表示%>
+  <%= render 'devise/shared/error_messages', model: f.object %>
+  <%# //インスタンスを渡して、エラー発生時にメッセージを表示%>
+
+  <%# 画像 %>
+  <div class="img-upload">
+    <div class='form-text-wrap'>
+      <label class="form-text">スタイル画像</label>
+      <span class="indispensable">必須</span>
+    </div>
+    <div class="click-upload">
+      <%= f.file_field :image, id:"report-image" %>
+    </div>
+  </div>
+  <%# /画像 %>
+
+　<div class="form-report">
+    <div class="form-report-group">
+      <div class='form-text-wrap'>
+        <label class="form-text">体重</label>
+        <span class="indispensable">必須</span>
+      </div>
+      <div>
+        <%= f.text_field :body_weight, class:"input-report", id:"report-name", placeholder:"50", autofocus: true %>
+        <span class="form-unit">kg</span>
+        <p class='info-text'>※半角数字のみ・小数点第一位まで</p>
+      </div>
+    </div>
+
+    <div class="form-report-group">
+      <div class='form-text-wrap'>
+        <label class="form-text">体脂肪</label>
+        <span class="form-any">任意</span>
+      </div>
+      <div>
+        <%= f.text_field :body_fat, class:"input-report", id:"report-name", placeholder:"30" %>
+        <span class="form-unit">%</span>
+        <p class='info-text'>※半角数字のみ・小数点第一位まで</p>
+      </div>
+    </div>
+
+    <div class="form-report-group">
+      <div class='form-text-wrap'>
+        <label class="form-text">バスト</label>
+        <span class="form-any">任意</span>
+      </div>
+      <div>
+        <%= f.text_field :body_bust, class:"input-report", id:"report-name", placeholder:"85" %>
+        <span class="form-unit">cm</span>
+        <p class='info-text'>※半角数字のみ・小数点第一位まで</p>
+      </div>
+    </div>
+
+    <div class="form-report-group">
+      <div class='form-text-wrap'>
+        <label class="form-text">二の腕</label>
+        <span class="form-any">任意</span>
+      </div>
+      <div>
+        <%= f.text_field :body_arm, class:"input-report", id:"report-name", placeholder:"26" %>
+        <span class="form-unit">cm</span>
+        <p class='info-text'>※半角数字のみ・小数点第一位まで</p>
+      </div>
+    </div>
+
+    <div class="form-report-group">
+      <div class='form-text-wrap'>
+        <label class="form-text">ウエスト</label>
+        <span class="form-any">任意</span>
+      </div>
+      <div>
+        <%= f.text_field :body_west, class:"input-report", id:"report-name", placeholder:"68" %>
+        <span class="form-unit">cm</span>
+        <p class='info-text'>※半角数字のみ・小数点第一位まで</p>
+      </div>
+    </div>
+
+    <div class="form-report-group">
+       <div class='form-text-wrap'>
+        <label class="form-text">下腹</label>
+        <span class="form-any">任意</span>
+      </div>
+      <div>
+        <%= f.text_field :body_belly, class:"input-report", id:"report-name", placeholder:"77" %>
+        <span class="form-unit">cm</span>
+        <p class='info-text'>※半角数字のみ・小数点第一位まで</p>
+      </div>
+    </div>
+
+    <div class="form-report-group">
+      <div class='form-text-wrap'>
+        <label class="form-text">ヒップ</label>
+        <span class="form-any">任意</span>
+      </div>
+      <div>
+        <%= f.text_field :body_hip, class:"input-report", id:"report-name", placeholder:"80" %>
+        <span class="form-unit">cm</span>
+        <p class='info-text'>※半角数字のみ・小数点第一位まで</p>
+      </div>
+    </div>
+
+    <div class="form-report-group">
+      <div class='form-text-wrap'>
+        <label class="form-text">太もも</label>
+        <span class="form-any">任意</span>
+      </div>
+      <div>
+        <%= f.text_field :body_thigh, class:"input-report", id:"report-name", placeholder:"54" %>
+        <span class="form-unit">cm</span>
+        <p class='info-text'>※半角数字のみ・小数点第一位まで</p>
+      </div>
+    </div>
+
+    <div class="form-report-group">
+      <div class='form-text-wrap'>
+        <label class="form-text">ふくらはぎ</label>
+        <span class="form-any">任意</span>
+      </div>
+      <div>
+        <%= f.text_field :body_calf, class:"input-report", id:"report-name", placeholder:"32"%>
+        <span class="form-unit">cm</span>
+        <p class='info-text'>※半角数字のみ・小数点第一位まで</p>
+      </div>
+    </div>
+
+    <div class="form-report-group">
+      <div class='form-text-wrap'>
+        <label class="form-text">足首</label>
+        <span class="form-any">任意</span>
+      </div>
+      <div>
+        <%= f.text_field :body_ankle, class:"input-report", id:"report-name", placeholder:"18"%>
+        <span class="form-unit">cm</span>
+        <p class='info-text'>※半角数字のみ・小数点第一位まで</p>
+      </div>
+    </div>
+  </div>
+
+  <%# 下部ボタン %>
+  <div class="sell-btn-contents">
+    <%= f.submit "登録する", class:"register-brown-btn" %>
+    <%=link_to 'もどる', root_path, class:"back-btn" %>
+  </div>
+  <%# /下部ボタン %>
+
+</div>
+<% end %>
+
+<%= render "devise/shared/footer" %>

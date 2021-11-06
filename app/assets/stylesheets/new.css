@@ -75,8 +75,6 @@
   font-weight: bold;
 }
 
-/* 共通 */
-/* registration */
 .form-group {
   width: 50%;
   display: -webkit-box;
@@ -108,7 +106,7 @@
   margin-top: 3px;
 }
 
-/* registration */
+/* 共通 */
 /* report */
 .date-select {
   display: -webkit-box;
@@ -121,6 +119,10 @@
 
 .calender-select {
   margin-left: 10px;
+}
+
+.form-report {
+  padding-bottom: 20px;
 }
 
 .form-report-group {
@@ -146,20 +148,6 @@
   background: #fff;
   font-size: 14px;
   resize: none;
-}
-
-.form-content {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
-.report-unit {
-  font-size: 14px;
-  padding: 20px 0 20px 20px;
 }
 
 /* report */
