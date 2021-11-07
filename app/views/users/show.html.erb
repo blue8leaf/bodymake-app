@@ -1,0 +1,33 @@
+<%= render "devise/shared/header" %>
+
+<div class="profile_table">
+  <span class="nickname_unit">
+    <%= @user.nickname %>さんのプロフィール</p>
+  </span>
+  <table class="report-table">  
+    <tbody>
+      <tr class="detail-report">
+        <th class="detail-user">身長</th>
+        <td class="detail-value"><%= @user.body_height %></td>
+      </tr>
+      <tr class="detail-report">
+        <th class="detail-user">目標体重</th>
+        <td class="detail-value"><%= @user.objective_weight %></td>
+      </tr>
+      <tr class="detail-report">
+        <th class="detail-user">性別</th>
+        <td class="detail-value"><%= @user.gender.name %></td>
+      </tr>
+      <tr class="detail-report">
+        <th class="detail-user">年齢</th>
+        <td class="detail-value"><%= @user.age.name %></td>
+      </tr>
+      <tr class="detail-report">
+        <th class="detail-user">プロフィール</th>
+        <td class="detail-value"><%= @user.profile %></td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+<%= render "devise/shared/footer"%>
