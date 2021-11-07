@@ -2,17 +2,17 @@
 
 <div class='report-contents'>
   <div class='report-show'>
+  
+    <% if current_user.id == @report.user_id %>
+    <div class="sell-btn-contents">
+      <%= link_to "編集", edit_report_path(@report.id), method: :get, class: "register-brown-btn" %>
+      <%# <%= link_to "削除", report_path(@report.id), method: :delete, class:"back-btn" %> 
+    </div>
+    <% end %>
     
     <div class='img-content'>
       <%= image_tag @report.image ,class:"report-img" %>
     </div>
-
-    <% if current_user.id == @report.user_id %>
-    <div class="edit-btn-contents">
-      <%= link_to "編集", edit_report_path(@report.id), method: :get, class: "register-brown-btn" %>
-      <%= link_to "削除", report_path(@report.id), method: :delete, class:"back-btn" %>
-    </div>
-    <% end %>
 
     <table class="report-table">
       <tbody>
