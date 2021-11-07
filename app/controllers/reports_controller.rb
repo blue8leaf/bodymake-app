@@ -2,7 +2,8 @@ class ReportsController < ApplicationController
   before_action :authenticate_user! 
 
   def index
-    @reports = Report.where(user_id: current_user.id).includes(:user).limit(5).order("id DESC")
+    @reports = Report.where(user_id: current_user.id).includes(:user)
+    @report = Report.where(id:params[:id])
   end
 
   def new
