@@ -164,8 +164,15 @@ font-weight: bold;
   align-items: center;
 }
 
+.edit-btn-contents{
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
 .register-brown-btn {
-  width: 70%;
+  width: 40%;
   background: $cBrown;
   border: 1px solid $cBrown;
   color: $cWhite;
@@ -175,10 +182,11 @@ font-weight: bold;
   border-radius: 50px;
   text-align: center;
   text-decoration: none;
+  margin: 5px;
 }
 
 .back-btn {
-  width: 70%;
+  width: 40%;
   background: #888;
   border: 1px solid #888;
   color: $cWhite;
@@ -186,9 +194,9 @@ font-weight: bold;
   font-size: 14px;
   cursor: pointer;
   border-radius: 50px;
-  margin-top: 15px;
+  text-align: center;
   text-decoration: none;
-  padding: 0px 28%;
+  margin: 5px;
 }
 
 input[type=text],
