@@ -35,12 +35,6 @@ class ReportsController < ApplicationController
     end
   end
 
-  def destroy
-    @report = Report.find(params[:id])
-    @report.destroy
-    redirect_to root_path
-  end
-
   private
   def report_params
     params.require(:report).permit(:image, :registration_date, :body_weight, :body_fat, :body_bust, :body_arm, :body_west, :body_belly, :body_hip, :body_thigh, :body_calf, :body_ankle).merge(user_id: current_user.id)
