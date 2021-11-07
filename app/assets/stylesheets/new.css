@@ -187,8 +187,20 @@
           align-items: center;
 }
 
+.edit-btn-contents {
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
 .register-brown-btn {
-  width: 70%;
+  width: 40%;
   background: #A57C55;
   border: 1px solid #A57C55;
   color: #fff;
@@ -198,10 +210,11 @@
   border-radius: 50px;
   text-align: center;
   text-decoration: none;
+  margin: 5px;
 }
 
 .back-btn {
-  width: 70%;
+  width: 40%;
   background: #888;
   border: 1px solid #888;
   color: #fff;
@@ -209,17 +222,9 @@
   font-size: 14px;
   cursor: pointer;
   border-radius: 50px;
-  margin-top: 15px;
+  text-align: center;
   text-decoration: none;
-  padding: 0px 28%;
-}
-
-input[type=text],
-input[type=email],
-input[type=password],
-textarea:focus {
-  background-color: #fff;
-  outline: none;
+  margin: 5px;
 }
 
 /* 画像 */
