@@ -9,7 +9,7 @@
 
     <% if current_user.id == @report.user_id %>
     <div class="edit-btn-contents">
-      <%= link_to "編集", edit_report_path(@report.id), method: :get, class: "register-brown-btn" %>
+      <%= link_to "編集", edit_report_path(@report.id), method: :get, class: "edit-brown-btn" %>
     </div>
     <% end %>
 

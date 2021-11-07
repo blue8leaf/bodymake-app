@@ -181,7 +181,9 @@ font-weight: bold;
   resize: none;
 }
 
-/* 登録ボタン devise report new edit */
+/* 登録ボタン devise new */
+
+/* 登録ボタン devise new */
 
 .register-btn {
   width: 50%;
@@ -191,7 +193,46 @@ font-weight: bold;
   justify-content: center;
 }
 
-.register-brown-btn {
+/* 茶色ボタン */
+
+.brown-btn {
+  width: 70%;
+  background: $cBrown;
+  border: 1px solid $cBrown;
+  color: $cWhite;
+  line-height: 48px;
+  font-size: 14px;
+  cursor: pointer;
+  border-radius: 50px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px;
+}
+
+/* 茶色ボタン */
+
+/* 登録ボタン report new edit */
+
+.create-btn-contents {
+  width: 50%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* 登録ボタン report new edit */
+
+/* 編集遷移ページボタン */
+
+.edit-btn-contents{
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.edit-brown-btn{
   width: 40%;
   background: $cBrown;
   border: 1px solid $cBrown;
@@ -205,35 +246,12 @@ font-weight: bold;
   margin: 5px;
 }
 
-/* 登録ボタン devise report new edit */
-
-/* 登録ボタン report new */
-
-.create-btn-contents {
-  width: 50%;
-  margin: 0 auto;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-/* 登録ボタン report new */
-
-/* 登録ボタン report edit */
-
-.edit-btn-contents{
-  margin: 0 auto;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-}
-
-/* 登録ボタン report edit */
+/* 編集遷移ページボタン */
 
 /* 戻るボタン report new edit */
 
 .back-btn {
-  width: 40%;
+  width: 70%;
   background: #888;
   border: 1px solid #888;
   color: $cWhite;
