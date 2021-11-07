@@ -37,12 +37,6 @@ class ReportsController < ApplicationController
     end
   end
 
-  def destroy
-    @report = Report.find(params[:id])
-    @report.destroy
-    redirect_to root_path
-  end
-
   def search
     @reports = Report.search(params[:search]).where(user_id: current_user.id)
   end
