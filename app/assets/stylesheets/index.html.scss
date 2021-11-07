@@ -15,7 +15,6 @@ $cBlack: #555;
 .link-text {
   text-decoration: none;
   font-size: 24px;
-  font-weight: bold;
   color: $cBlack;
 }
 
@@ -53,31 +52,16 @@ $cBlack: #555;
   height: 50px;
 }
 
-.detail-date {
-  background-color: #f3f1ef;
-  border: 1px solid #ccc;
-  border-bottom: 2px solid #888;
-  font-size: 16px;
-  text-align: center;
-  padding: 20px;
-}
-
-.detail-value-data {
-  padding: 20px;
-  border: 1px solid #ccc;
-  border-bottom: 2px solid #888;
-  font-size: 16px;
-}
-
 .detail-unit {
   background-color: #f3f1ef;
   border: 1px solid #ccc;
   font-size: 14px;
   text-align: center;
+  padding: 5px;
 }
 
 .detail-value {
-  padding: 20px;
+  padding: 14px;
   border: 1px solid #ccc;
   font-size: 14px;
 }
