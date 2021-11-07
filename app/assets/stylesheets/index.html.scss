@@ -1,5 +1,7 @@
 $cBlack: #555;
 
+/* 全体 index show */
+
 .report-contents {
   display: flex;
   flex-direction: column;
@@ -8,14 +10,12 @@ $cBlack: #555;
   min-width: 100vh;
 }
 
+/* 全体 index show */
+
+/* 記録 */
+
 .report-title {
   padding: 20px;
-}
-
-.link-text {
-  text-decoration: none;
-  font-size: 24px;
-  color: $cBlack;
 }
 
 .index-unit {
@@ -24,6 +24,19 @@ $cBlack: #555;
   color: $cBlack;
 }
 
+/* 記録 */
+
+/* グラフ */
+
+.report-body{
+  margin: 30px;
+  text-align: center;
+}
+
+/* グラフ */
+
+/* 表　全体 */
+
 .report-lists {
   display: flex;
   flex-wrap: wrap;
@@ -31,15 +44,19 @@ $cBlack: #555;
   flex-direction: row-reverse;
 }
 
-.body-chart{
-  display: flex;
-  flex-direction: column;
+/* 表　全体 */
+
+/* 編集　リンク */
+
+.link-text {
+  text-decoration: none;
+  font-size: 24px;
+  color: $cBlack;
 }
 
-.report-body{
-  margin: 30px;
-  text-align: center;
-}
+/* 編集　リンク */
+
+/* 表　index show user.show */
 
 .report-table {
   display: flex;
@@ -66,12 +83,9 @@ $cBlack: #555;
   font-size: 14px;
 }
 
-.report-img-unit{
-  font-size: 14px;
-  display: flex;
-  justify-content: center;
-  margin: 10px;
-}
+/* 表 */
+
+/* show image */
 
 .report-img {
   height: 300px;
@@ -82,3 +96,5 @@ $cBlack: #555;
   display: flex;
   justify-content: center;
 }
+
+/* show image */

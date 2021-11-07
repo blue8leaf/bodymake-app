@@ -2,38 +2,7 @@ $cWhite: #fff;
 $cLightGray: #ccc;
 $cBrown: #A57C55;
 
-/* 共通 */
-.indispensable {
-  margin-left: 8px;
-  padding: 3px;
-  color: #d33833;
-  font-size: 14px;
-  font-weight: bold;
-  border-radius: 2px;
-}
-
-.form-any {
-  margin-left: 8px;
-  padding: 3px;
-  color: #888;
-  font-size: 14px;
-  border-radius: 2px;
-}
-
-.select-box {
-  height: 30px;
-  width: 200px;
-  background-color: #fff;
-  padding-left: 20px;
-  border-radius: 6px;
-  border: 1px solid #ccc;
-  font-size: 14px;
-  color: #555;
-}
-
-.select-box:focus {
-  outline: none;
-}
+/* 全体 devise report new dit */
 
 .form-main {
   width: 100%;
@@ -51,6 +20,10 @@ padding-bottom: 70px;
 border-radius: 50px;
 }
 
+/* 全体 devise report new dit */
+
+/* タイトル devise report */
+
 .form-header {
 width: 100%;
 height: 120px;
@@ -63,15 +36,31 @@ line-height: 100px;
 font-weight: bold;
 }
 
-.form-text-wrap {
-  width: 100%;
-  height: 20%;
+/* タイトル devise report */
+
+/* 登録日 report */
+
+.date-select{
+  display: flex;
+  justify-content: center;
 }
+
+.calender-select{
+  margin-left: 10px;
+}
+
+/* 登録日 report */
+
+/* 登録日 report フォーム devise report */
 
 .form-text {
   font-size: 13px;
   font-weight: bold;
 }
+
+/* 登録日 report フォーム devise report */
+
+/* フォーム　devise report */
 
 .form-group {
   width: 50%;
@@ -80,6 +69,59 @@ font-weight: bold;
   margin: 0 auto;
   padding-top: 20px;
 }
+
+.form-text-wrap {
+  width: 100%;
+  height: 20%;
+}
+
+/* フォーム　devise report */
+
+/* 必須　devise report */
+
+.indispensable {
+  margin-left: 8px;
+  padding: 3px;
+  color: #d33833;
+  font-size: 14px;
+  font-weight: bold;
+  border-radius: 2px;
+}
+
+/* 必須　devise report */
+
+/* 任意　devise report */
+
+.form-any {
+  margin-left: 8px;
+  padding: 3px;
+  color: #888;
+  font-size: 14px;
+  border-radius: 2px;
+}
+
+/* 任意　devise report */
+
+/* カテゴリー　devise */
+
+.select-box {
+  height: 30px;
+  width: 200px;
+  background-color: #fff;
+  padding-left: 20px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  font-size: 14px;
+  color: #555;
+}
+
+.select-box:focus {
+  outline: none;
+}
+
+/* カテゴリー　devise */
+
+/* text系　devise report new edit */
 
 .input-default {
   width: 100%;
@@ -93,23 +135,17 @@ font-weight: bold;
   resize: none;
 }
 
+/* text系　devise report new edit */
+
+/* サブ文字　devise report new edit */
+
 .info-text {
   color: #888;
   font-size: 13px;
   margin-top: 3px;
 }
 
-/* 共通 */
-
-/* report */
-.date-select{
-  display: flex;
-  justify-content: center;
-}
-
-.calender-select{
-  margin-left: 10px;
-}
+/* サブ文字　devise report new edit */
 
 .form-report{
   padding-bottom: 20px;
@@ -135,9 +171,6 @@ font-weight: bold;
   resize: none;
 }
 
-/* report */
-
-
 .input-profile {
   width: 100%;
   padding: 16px 14px 8px;
@@ -148,27 +181,14 @@ font-weight: bold;
   resize: none;
 }
 
+/* 登録ボタン devise report new edit */
+
 .register-btn {
   width: 50%;
   margin: 0 auto;
   margin-top: 50px;
   display: flex;
   justify-content: center;
-}
-
-.sell-btn-contents {
-  width: 50%;
-  margin: 0 auto;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.edit-btn-contents{
-  margin: 0 auto;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
 }
 
 .register-brown-btn {
@@ -185,6 +205,33 @@ font-weight: bold;
   margin: 5px;
 }
 
+/* 登録ボタン devise report new edit */
+
+/* 登録ボタン report new */
+
+.create-btn-contents {
+  width: 50%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* 登録ボタン report new */
+
+/* 登録ボタン report edit */
+
+.edit-btn-contents{
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+/* 登録ボタン report edit */
+
+/* 戻るボタン report new edit */
+
 .back-btn {
   width: 40%;
   background: #888;
@@ -199,7 +246,7 @@ font-weight: bold;
   margin: 5px;
 }
 
-
+/* 戻るボタン report new edit */
 
 /* 画像 */
 .img-upload {
