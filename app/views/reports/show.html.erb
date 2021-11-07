@@ -2,13 +2,12 @@
 
 <div class='report-contents'>
   <div class='report-show'>
+    
+    <div class='img-content'>
+      <%= image_tag @report.image ,class:"report-img" %>
+    </div>
 
     <table class="report-table">
-
-      <div class='img-content'>
-        <%= image_tag @report.image ,class:"report-img" %>
-      </div>
-
       <tbody>
         <tr class="detail-report">
           <th class="detail-date">登録日</th>
