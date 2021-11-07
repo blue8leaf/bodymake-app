@@ -1,6 +1,6 @@
 FactoryBot.define do
   factory :report do
-    registration_date { Faker::Date.backward(days: 5)}
+    registration_date { Date.today}
     body_weight { '50.1' }
     body_fat { '30.1' }
     body_bust { '85.4' }
