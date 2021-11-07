@@ -9,7 +9,7 @@
   <div class='report-lists'>
     <% @reports.each do |report| %>
 
-      <%# <%= link_to report_path(report.id), class: "link-text" do %> 
+      <%= link_to report_path(report.id), class: "link-text" do %>
 
       <table class="report-table">  
         <tbody>
@@ -60,7 +60,7 @@
         </tbody>
       </table>
 
-      <%# <% end %> 
+      <% end %>
 
     <% end %>
   </div>

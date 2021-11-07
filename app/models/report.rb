@@ -19,7 +19,6 @@ class Report < ApplicationRecord
 
   validates :image, presence: true
   validates :registration_date, presence: true
-  validates :registration_date, uniqueness: true, on: :create
   validate :cannot_future, on: :create
 
   def cannot_future
