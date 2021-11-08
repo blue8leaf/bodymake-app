@@ -51,16 +51,19 @@ font-weight: bold;
 
 /* 登録日 report */
 
-/* 登録日 report フォーム devise report */
+/* フォーム devise report */
 
-.form-text {
-  font-size: 13px;
-  font-weight: bold;
+.input-report {
+  width: 180px;
+  margin-top: 5px;
+  height: 48px;
+  padding: 10px 14px 8px;
+  border-radius: 10px;
+  border: 1px solid $cLightGray;
+  background: $cWhite;
+  font-size: 14px;
+  resize: none;
 }
-
-/* 登録日 report フォーム devise report */
-
-/* フォーム　devise report */
 
 .form-group {
   width: 50%;
@@ -75,7 +78,28 @@ font-weight: bold;
   height: 20%;
 }
 
-/* フォーム　devise report */
+.form-text {
+  font-size: 13px;
+  font-weight: bold;
+}
+
+/* フォーム devise report */
+
+/* フォーム report new */
+
+.form-report{
+  padding-bottom: 20px;
+}
+
+.form-report-group {
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  padding-top: 20px;
+}
+
+/* フォーム report new */
 
 /* 必須　devise report */
 
@@ -147,29 +171,7 @@ font-weight: bold;
 
 /* サブ文字　devise report new edit */
 
-.form-report{
-  padding-bottom: 20px;
-}
-
-.form-report-group {
-  width: 30%;
-  display: flex;
-  flex-direction: column;
-  margin: 0 auto;
-  padding-top: 20px;
-}
-
-.input-report {
-  width: 180px;
-  margin-top: 5px;
-  height: 48px;
-  padding: 10px 14px 8px;
-  border-radius: 10px;
-  border: 1px solid $cLightGray;
-  background: $cWhite;
-  font-size: 14px;
-  resize: none;
-}
+/* 新規登録 new */
 
 .input-profile {
   width: 100%;
@@ -181,7 +183,7 @@ font-weight: bold;
   resize: none;
 }
 
-/* 登録ボタン devise new */
+/* 新規登録 new */
 
 /* 登録ボタン devise new */
 
@@ -192,6 +194,8 @@ font-weight: bold;
   display: flex;
   justify-content: center;
 }
+
+/* 登録ボタン devise new */
 
 /* 茶色ボタン */
 

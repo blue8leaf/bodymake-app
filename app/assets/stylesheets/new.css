@@ -50,14 +50,19 @@
 }
 
 /* 登録日 report */
-/* 登録日 report フォーム devise report */
-.form-text {
-  font-size: 13px;
-  font-weight: bold;
+/* フォーム devise report */
+.input-report {
+  width: 180px;
+  margin-top: 5px;
+  height: 48px;
+  padding: 10px 14px 8px;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  background: #fff;
+  font-size: 14px;
+  resize: none;
 }
 
-/* 登録日 report フォーム devise report */
-/* フォーム　devise report */
 .form-group {
   width: 50%;
   display: -webkit-box;
@@ -76,7 +81,31 @@
   height: 20%;
 }
 
-/* フォーム　devise report */
+.form-text {
+  font-size: 13px;
+  font-weight: bold;
+}
+
+/* フォーム devise report */
+/* フォーム report new */
+.form-report {
+  padding-bottom: 20px;
+}
+
+.form-report-group {
+  width: 30%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 0 auto;
+  padding-top: 20px;
+}
+
+/* フォーム report new */
 /* 必須　devise report */
 .indispensable {
   margin-left: 8px;
@@ -137,35 +166,7 @@
 }
 
 /* サブ文字　devise report new edit */
-.form-report {
-  padding-bottom: 20px;
-}
-
-.form-report-group {
-  width: 30%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  margin: 0 auto;
-  padding-top: 20px;
-}
-
-.input-report {
-  width: 180px;
-  margin-top: 5px;
-  height: 48px;
-  padding: 10px 14px 8px;
-  border-radius: 10px;
-  border: 1px solid #ccc;
-  background: #fff;
-  font-size: 14px;
-  resize: none;
-}
-
+/* 新規登録 new */
 .input-profile {
   width: 100%;
   padding: 16px 14px 8px;
@@ -176,7 +177,7 @@
   resize: none;
 }
 
-/* 登録ボタン devise new */
+/* 新規登録 new */
 /* 登録ボタン devise new */
 .register-btn {
   width: 50%;
@@ -190,6 +191,7 @@
           justify-content: center;
 }
 
+/* 登録ボタン devise new */
 /* 茶色ボタン */
 .brown-btn {
   width: 70%;
@@ -206,6 +208,23 @@
 }
 
 /* 茶色ボタン */
+/* 登録ボタン report new edit */
+.create-btn-contents {
+  width: 50%;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+/* 登録ボタン report new edit */
 /* 編集遷移ページボタン */
 .edit-btn-contents {
   margin: 0 auto;
@@ -234,23 +253,6 @@
 }
 
 /* 編集遷移ページボタン */
-/* 登録ボタン report new edit */
-.create-btn-contents {
-  width: 50%;
-  margin: 0 auto;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-/* 登録ボタン report new edit */
 /* 戻るボタン report new edit */
 .back-btn {
   width: 70%;

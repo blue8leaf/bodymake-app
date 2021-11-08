@@ -9,7 +9,6 @@
   background-size: cover;
   background-repeat: no-repeat;
   background-position: top center;
-  display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
