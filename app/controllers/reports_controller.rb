@@ -3,7 +3,6 @@ class ReportsController < ApplicationController
 
   def index
     @reports = Report.where(user_id: current_user.id).includes(:user).limit(7).order("id DESC")
-    @objective_weight = current_user.objective_weight
   end
 
   def new
