@@ -58,6 +58,7 @@
       <%= line_chart @reports.group_by_day(:registration_date, last: 7, series: false).sum(:body_ankle),
           min: 0, max: 30, curve: false, width: '800px', height: '300px', colors: ['#A57C55'] %>
     </div>
+  </div>
 </div>
 
 <%= render "devise/shared/footer"%>
