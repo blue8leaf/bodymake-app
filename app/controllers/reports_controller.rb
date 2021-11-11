@@ -2,7 +2,7 @@ class ReportsController < ApplicationController
   before_action :authenticate_user! 
 
   def index
-    @reports = Report.where(user_id: current_user.id).includes(:user).limit(5).order("id DESC")
+    @reports = Report.where(user_id: current_user.id).includes(:user).limit(7).order("id DESC")
   end
 
   def new
@@ -35,10 +35,8 @@ class ReportsController < ApplicationController
     end
   end
 
-  def destroy
-    @report = Report.find(params[:id])
-    @report.destroy
-    redirect_to root_path
+  def search
+    @reports = Report.search(params[:search]).where(user_id: current_user.id)
   end
 
   private

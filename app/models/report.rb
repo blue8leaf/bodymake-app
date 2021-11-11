@@ -20,10 +20,17 @@ class Report < ApplicationRecord
   validates :image, presence: true
   validates :registration_date, presence: true
   validate :cannot_future, on: :create
+  validate :cannot_past, on: :create
 
   def cannot_future
-    if registration_date.present? && registration_date > Date.today
+    if registration_date.present? && registration_date.future?
       errors.add(:registration_date, "can not specify your future date")
+    end
+  end
+
+  def cannot_past
+    if registration_date.present? && registration_date.past?
+      errors.add(:registration_date, "can not specify your past date")
     end
   end
 end

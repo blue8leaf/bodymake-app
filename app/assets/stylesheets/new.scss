@@ -2,38 +2,7 @@ $cWhite: #fff;
 $cLightGray: #ccc;
 $cBrown: #A57C55;
 
-/* 共通 */
-.indispensable {
-  margin-left: 8px;
-  padding: 3px;
-  color: #d33833;
-  font-size: 14px;
-  font-weight: bold;
-  border-radius: 2px;
-}
-
-.form-any {
-  margin-left: 8px;
-  padding: 3px;
-  color: #888;
-  font-size: 14px;
-  border-radius: 2px;
-}
-
-.select-box {
-  height: 30px;
-  width: 200px;
-  background-color: #fff;
-  padding-left: 20px;
-  border-radius: 6px;
-  border: 1px solid #ccc;
-  font-size: 14px;
-  color: #555;
-}
-
-.select-box:focus {
-  outline: none;
-}
+/* 全体 devise report new dit */
 
 .form-main {
   width: 100%;
@@ -51,6 +20,10 @@ padding-bottom: 70px;
 border-radius: 50px;
 }
 
+/* 全体 devise report new dit */
+
+/* タイトル devise report */
+
 .form-header {
 width: 100%;
 height: 120px;
@@ -63,45 +36,10 @@ line-height: 100px;
 font-weight: bold;
 }
 
-.form-text-wrap {
-  width: 100%;
-  height: 20%;
-}
+/* タイトル devise report */
 
-.form-text {
-  font-size: 13px;
-  font-weight: bold;
-}
+/* 登録日 report */
 
-.form-group {
-  width: 50%;
-  display: flex;
-  flex-direction: column;
-  margin: 0 auto;
-  padding-top: 20px;
-}
-
-.input-default {
-  width: 100%;
-  margin-top: 5px;
-  height: 48px;
-  padding: 10px 14px 8px;
-  border-radius: 10px;
-  border: 1px solid $cLightGray;
-  background: $cWhite;
-  font-size: 14px;
-  resize: none;
-}
-
-.info-text {
-  color: #888;
-  font-size: 13px;
-  margin-top: 3px;
-}
-
-/* 共通 */
-
-/* report */
 .date-select{
   display: flex;
   justify-content: center;
@@ -111,17 +49,9 @@ font-weight: bold;
   margin-left: 10px;
 }
 
-.form-report{
-  padding-bottom: 20px;
-}
+/* 登録日 report */
 
-.form-report-group {
-  width: 30%;
-  display: flex;
-  flex-direction: column;
-  margin: 0 auto;
-  padding-top: 20px;
-}
+/* フォーム devise report */
 
 .input-report {
   width: 180px;
@@ -135,8 +65,113 @@ font-weight: bold;
   resize: none;
 }
 
-/* report */
+.form-group {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  padding-top: 20px;
+}
 
+.form-text-wrap {
+  width: 100%;
+  height: 20%;
+}
+
+.form-text {
+  font-size: 13px;
+  font-weight: bold;
+}
+
+/* フォーム devise report */
+
+/* フォーム report new */
+
+.form-report{
+  padding-bottom: 20px;
+}
+
+.form-report-group {
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  padding-top: 20px;
+}
+
+/* フォーム report new */
+
+/* 必須　devise report */
+
+.indispensable {
+  margin-left: 8px;
+  padding: 3px;
+  color: #d33833;
+  font-size: 14px;
+  font-weight: bold;
+  border-radius: 2px;
+}
+
+/* 必須　devise report */
+
+/* 任意　devise report */
+
+.form-any {
+  margin-left: 8px;
+  padding: 3px;
+  color: #888;
+  font-size: 14px;
+  border-radius: 2px;
+}
+
+/* 任意　devise report */
+
+/* カテゴリー　devise */
+
+.select-box {
+  height: 30px;
+  width: 200px;
+  background-color: #fff;
+  padding-left: 20px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  font-size: 14px;
+  color: #555;
+}
+
+.select-box:focus {
+  outline: none;
+}
+
+/* カテゴリー　devise */
+
+/* text系　devise report new edit */
+
+.input-default {
+  width: 100%;
+  margin-top: 5px;
+  height: 48px;
+  padding: 10px 14px 8px;
+  border-radius: 10px;
+  border: 1px solid $cLightGray;
+  background: $cWhite;
+  font-size: 14px;
+  resize: none;
+}
+
+/* text系　devise report new edit */
+
+/* サブ文字　devise report new edit */
+
+.info-text {
+  color: #888;
+  font-size: 13px;
+  margin-top: 3px;
+}
+
+/* サブ文字　devise report new edit */
+
+/* 新規登録 new */
 
 .input-profile {
   width: 100%;
@@ -148,6 +183,10 @@ font-weight: bold;
   resize: none;
 }
 
+/* 新規登録 new */
+
+/* 登録ボタン devise new */
+
 .register-btn {
   width: 50%;
   margin: 0 auto;
@@ -156,7 +195,29 @@ font-weight: bold;
   justify-content: center;
 }
 
-.sell-btn-contents {
+/* 登録ボタン devise new */
+
+/* 茶色ボタン */
+
+.brown-btn {
+  width: 70%;
+  background: $cBrown;
+  border: 1px solid $cBrown;
+  color: $cWhite;
+  line-height: 48px;
+  font-size: 14px;
+  cursor: pointer;
+  border-radius: 50px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px;
+}
+
+/* 茶色ボタン */
+
+/* 登録ボタン report new edit */
+
+.create-btn-contents {
   width: 50%;
   margin: 0 auto;
   display: flex;
@@ -164,14 +225,18 @@ font-weight: bold;
   align-items: center;
 }
 
+/* 登録ボタン report new edit */
+
+/* 編集遷移ページボタン */
+
 .edit-btn-contents{
-  margin: 0 auto;
+  margin: 20px auto;
   display: flex;
   justify-content: space-around;
   align-items: center;
 }
 
-.register-brown-btn {
+.edit-brown-btn{
   width: 40%;
   background: $cBrown;
   border: 1px solid $cBrown;
@@ -185,8 +250,12 @@ font-weight: bold;
   margin: 5px;
 }
 
+/* 編集遷移ページボタン */
+
+/* 戻るボタン report new edit */
+
 .back-btn {
-  width: 40%;
+  width: 70%;
   background: #888;
   border: 1px solid #888;
   color: $cWhite;
@@ -199,7 +268,7 @@ font-weight: bold;
   margin: 5px;
 }
 
-
+/* 戻るボタン report new edit */
 
 /* 画像 */
 .img-upload {

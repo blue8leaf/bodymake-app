@@ -2,7 +2,9 @@
 
 <div class='report-contents'>
   <div class="report-title" >
-    <%= link_to "#{current_user.nickname}さんの記録", user_path(current_user), class: "link-text" %>
+    <h1 class='index-unit'>
+      1週間の記録
+    </h1>
   </div>
 
   <div class='report-lists'>
@@ -13,8 +15,8 @@
       <table class="report-table">  
         <tbody>
           <tr class="detail-report">
-            <th class="detail-date">登録日</th>
-            <td class="detail-value-data"><%= report.registration_date %></td>
+            <th class="detail-unit">登録日</th>
+            <td class="detail-value"><%= report.registration_date %></td>
           </tr>
           <tr class="detail-report">
             <th class="detail-unit">体重</th>
@@ -58,6 +60,10 @@
           </tr>
         </tbody>
       </table>
+
+      <div class='img-content'>
+        <%= image_tag report.image ,class:"reports-img" %>
+      </div>
 
       <% end %>
 

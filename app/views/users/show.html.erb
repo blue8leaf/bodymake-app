@@ -7,82 +7,27 @@
   <table class="report-table">  
     <tbody>
       <tr class="detail-report">
-        <th class="detail-user">身長</th>
+        <th class="detail-unit">身長</th>
         <td class="detail-value"><%= @user.body_height %></td>
       </tr>
       <tr class="detail-report">
-        <th class="detail-user">目標体重</th>
+        <th class="detail-unit">目標体重</th>
         <td class="detail-value"><%= @user.objective_weight %></td>
       </tr>
       <tr class="detail-report">
-        <th class="detail-user">性別</th>
+        <th class="detail-unit">性別</th>
         <td class="detail-value"><%= @user.gender.name %></td>
       </tr>
       <tr class="detail-report">
-        <th class="detail-user">年齢</th>
+        <th class="detail-unit">年齢</th>
         <td class="detail-value"><%= @user.age.name %></td>
       </tr>
       <tr class="detail-report">
-        <th class="detail-user">プロフィール</th>
+        <th class="detail-unit">プロフィール</th>
         <td class="detail-value"><%= @user.profile %></td>
       </tr>
     </tbody>
   </table>
-
-  <div class= "report-chart">
-    <div class= "report-body">
-      <span class="report-unit">体重</span>
-      <%= line_chart @reports.group_by_day(:registration_date, last: 7).sum(:body_weight),
-          min: 0, max: 100, curve: false, series: false, width: '800px', height: '300px', colors: ['#A57C55'] %>
-    </div>
-    <div class= "report-body">
-      <span class="report-unit">体脂肪</span>
-      <%= line_chart @reports.group_by_day(:registration_date, last: 7).sum(:body_fat),
-          min: 0, max: 40, curve: false, series: false, width: '800px', height: '300px', colors: ['#A57C55'] %>
-    </div>
-    <div class= "report-body">
-      <span class="report-unit">バスト</span>
-      <%= line_chart @reports.group_by_day(:registration_date, last: 7).sum(:body_bust),
-          min: 0, max: 100, curve: false, series: false, width: '800px', height: '300px', colors: ['#A57C55'] %>
-    </div>
-    <div class= "report-body">
-      <span class="report-unit">二の腕</span>
-      <%= line_chart @reports.group_by_day(:registration_date, last: 7).sum(:body_arm),
-          min: 0, max: 40, curve: false, series: false, width: '800px', height: '300px', colors: ['#A57C55'] %>
-    </div>
-    <div class= "report-body">
-      <span class="report-unit">ウエスト</span>
-      <%= line_chart @reports.group_by_day(:registration_date, last: 7).sum(:body_west),
-          min: 0, max: 100, curve: false, series: false, width: '800px', height: '300px', colors: ['#A57C55'] %>
-    </div>
-    <div class= "report-body">
-      <span class="report-unit">下腹</span>
-      <%= line_chart @reports.group_by_day(:registration_date, last: 7).sum(:body_belly),
-          min: 0, max: 100, curve: false, series: false, width: '800px', height: '300px', colors: ['#A57C55'] %>
-    </div>
-    <div class= "report-body">
-      <span class="report-unit">ヒップ</span>
-      <%= line_chart @reports.group_by_day(:registration_date, last: 7).sum(:body_hip),
-          min: 0, max: 100, curve: false, series: false, width: '800px', height: '300px', colors: ['#A57C55'] %>
-    </div>
-    <div class= "report-body">
-      <span class="report-unit">太もも</span>
-      <%= line_chart @reports.group_by_day(:registration_date, last: 7).sum(:body_thigh),
-          min: 0, max: 60, curve: false, series: false, width: '800px', height: '300px', colors: ['#A57C55'] %>
-    </div>
-    <div class= "report-body">
-      <span class="report-unit">ふくらはぎ</span>
-      <%= line_chart @reports.group_by_day(:registration_date, last: 7).sum(:body_calf),
-          min: 0, max: 60, curve: false, series: false, width: '800px', height: '300px', colors: ['#A57C55'] %>
-    </div>
-    <div class= "report-body">
-      <span class="report-unit">足首</span>
-      <%= line_chart @reports.group_by_day(:registration_date, last: 7).sum(:body_ankle),
-          min: 0, max: 30, curve: false, series: false, width: '800px', height: '300px', colors: ['#A57C55'] %>
-    </div>
-  </div>
-</div>
-
 </div>
 
 <%= render "devise/shared/footer"%>

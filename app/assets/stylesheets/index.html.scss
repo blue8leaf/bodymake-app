@@ -1,5 +1,7 @@
 $cBlack: #555;
 
+/* 全体 index show */
+
 .report-contents {
   display: flex;
   flex-direction: column;
@@ -8,15 +10,12 @@ $cBlack: #555;
   min-width: 100vh;
 }
 
+/* 全体 index show */
+
+/* 記録 */
+
 .report-title {
   padding: 20px;
-}
-
-.link-text {
-  text-decoration: none;
-  font-size: 24px;
-  font-weight: bold;
-  color: $cBlack;
 }
 
 .index-unit {
@@ -25,6 +24,19 @@ $cBlack: #555;
   color: $cBlack;
 }
 
+/* 記録 */
+
+/* グラフ */
+
+.report-body{
+  margin: 30px;
+  text-align: center;
+}
+
+/* グラフ */
+
+/* 表　全体 */
+
 .report-lists {
   display: flex;
   flex-wrap: wrap;
@@ -32,20 +44,24 @@ $cBlack: #555;
   flex-direction: row-reverse;
 }
 
-.body-chart{
-  display: flex;
-  flex-direction: column;
+/* 表　全体 */
+
+/* 編集　リンク */
+
+.link-text {
+  text-decoration: none;
+  font-size: 24px;
+  color: $cBlack;
 }
 
-.report-body{
-  margin: 30px;
-  text-align: center;
-}
+/* 編集　リンク */
+
+/* 表　index show user.show */
 
 .report-table {
   display: flex;
   justify-content: center;
-  margin: 40px 0;
+  margin: 0;
 }
 
 .detail-report {
@@ -53,41 +69,37 @@ $cBlack: #555;
   height: 50px;
 }
 
-.detail-date {
-  background-color: #f3f1ef;
-  border: 1px solid #ccc;
-  border-bottom: 2px solid #888;
-  font-size: 16px;
-  text-align: center;
-  padding: 20px;
-}
-
-.detail-value-data {
-  padding: 20px;
-  border: 1px solid #ccc;
-  border-bottom: 2px solid #888;
-  font-size: 16px;
-}
-
 .detail-unit {
   background-color: #f3f1ef;
   border: 1px solid #ccc;
   font-size: 14px;
   text-align: center;
+  padding: 5px;
 }
 
 .detail-value {
-  padding: 20px;
+  padding: 14px;
   border: 1px solid #ccc;
   font-size: 14px;
 }
 
-.report-img-unit{
-  font-size: 14px;
+/* 表　index show user.show */
+
+/* index image */
+
+.reports-img {
+  height: 200px;
+  width: 200px;
+  background-color: #dedede;
+  object-fit: contain;
   display: flex;
   justify-content: center;
-  margin: 10px;
+  border: 2px solid #fff;
 }
+
+/* index image */
+
+/* show image */
 
 .report-img {
   height: 300px;
@@ -98,3 +110,5 @@ $cBlack: #555;
   display: flex;
   justify-content: center;
 }
+
+/* show image */
