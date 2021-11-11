@@ -5,6 +5,7 @@
       <div class='nav'>
         <ul class='lists-left'>
           <li> <%= link_to '今日の記録', new_report_path, class: 'user-link'%> </li>
+          <li> <%= link_to 'グラフ', graphs_path, class: 'user-link'%> </li>
         </ul>
         <ul class='lists-right'>
           <% if user_signed_in? %>
