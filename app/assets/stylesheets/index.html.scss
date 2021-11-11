@@ -26,6 +26,31 @@ $cBlack: #555;
 
 /* 記録 */
 
+/* 目標体重 */
+
+.report-goal{
+  display: flex;
+  justify-content: center;
+  margin: 20px 0 30px;
+}
+
+.goal-text {
+  font-size: 20px;
+  color: $cBlack;
+}
+
+.goal-value{
+  font-weight: bold;
+  font-size: 20px;
+  padding: 0 20px;
+}
+
+.goal-unit{
+  font-size: 20px;
+}
+
+/* 目標体重 */
+
 /* グラフ */
 
 .report-body{
