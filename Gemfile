@@ -69,3 +69,5 @@ gem "chartkick"
 gem 'groupdate'
 
 gem "aws-sdk-s3", require: false
+
+gem 'rails-i18n'
