@@ -1,0 +1,23 @@
+ja:
+  activerecord:
+    attributes:
+      user:
+        nickname: ニックネーム
+        body_height: 身長
+        objective_weight: 目標体重
+        profile: プロフィール
+        gender_id: 性別
+        age_id: 年齢
+      report:
+        registration_date: 今日の日付
+        body_weight: 体重
+        body_fat: 体脂肪
+        body_bust: バスト
+        body_arm: 二の腕
+        body_west: ウエスト
+        body_belly: 下腹
+        body_hip: ヒップ
+        body_thigh: 太もも
+        body_calf: ふくらはぎ
+        body_ankle: 足首
+        image: 画像
