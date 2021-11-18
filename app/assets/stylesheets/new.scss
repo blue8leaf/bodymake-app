@@ -291,3 +291,9 @@ font-weight: bold;
 }
 
 /* /画像 */
+
+img{
+  height: 150px;
+  width: 150px;
+  object-fit: contain;
+}
