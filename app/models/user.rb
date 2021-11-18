@@ -12,6 +12,12 @@ class User < ApplicationRecord
       nickname: auth.info.name,
         email: auth.info.email
     )
+    # userが登録済みか
+    if user.persisted?
+      sns.user = user
+      sns.save
+    end
+    user
   end
   
   with_options presence: true do
