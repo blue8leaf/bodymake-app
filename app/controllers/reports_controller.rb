@@ -12,7 +12,7 @@ class ReportsController < ApplicationController
   def create
     @report = Report.new(report_params)
     if @report.save
-      redirect_to root_path
+      redirect_to reports_path
     else
       render :new
     end
@@ -29,14 +29,10 @@ class ReportsController < ApplicationController
   def update
     @report = Report.find(params[:id])
     if @report.update(report_params)
-      redirect_to report_path
+      redirect_to reports_path
     else
       render :edit
     end
-  end
-
-  def search
-    @reports = Report.search(params[:search]).where(user_id: current_user.id)
   end
 
   private
