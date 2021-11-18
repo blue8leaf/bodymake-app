@@ -17,7 +17,7 @@ class User < ApplicationRecord
       sns.user = user
       sns.save
     end
-    { user: user, sns: sns }
+    user
   end
   
   with_options presence: true do
