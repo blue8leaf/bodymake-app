@@ -1,10 +1,9 @@
 <header class = 'header'>
   <div class='title'>
-    <%= link_to 'Body make-up', root_path, class: "header-title" %>
+    <%= link_to 'Body make-up', reports_path, class: "header-title" %>
     <div class='menu'>
       <div class='nav'>
         <ul class='lists-left'>
-        <li> <%= link_to '1週間の記録', reports_path, class: 'user-link'%> </li>
           <li> <%= link_to '今日の記録', new_report_path, class: 'user-link'%> </li>
           <li> <%= link_to 'グラフ', graphs_path, class: 'user-link'%> </li>
         </ul>
