@@ -30,90 +30,80 @@ RSpec.describe User do
       it 'nicknameが空では登録できない' do
         @user.nickname = ''
         @user.valid?
-        expect(@user.errors.full_messages).to include("Nickname can't be blank")
+        expect(@user.errors.full_messages).to include("ニックネームを入力してください")
       end
       it 'emaiが空では登録できない' do
         @user.email = ''
         @user.valid?
-        expect(@user.errors.full_messages).to include("Email can't be blank")
+        expect(@user.errors.full_messages).to include("Eメールを入力してください")
       end
       it '重複したemailが存在する場合登録できない' do
         @user.save
         another_user = FactoryBot.build(:user, email: @user.email)
         another_user.valid?
-        expect(another_user.errors.full_messages).to include('Email has already been taken')
+        expect(another_user.errors.full_messages).to include('Eメールはすでに存在します')
       end
       it 'emailに@が含まれない場合登録できない' do
         @user.email = 'test'
         @user.valid?
-        expect(@user.errors.full_messages).to include('Email is invalid')
+        expect(@user.errors.full_messages).to include('Eメールは不正な値です')
       end
       it 'passwordが空では登録できない' do
         @user.password = ''
         @user.valid?
-        expect(@user.errors.full_messages).to include("Password can't be blank")
+        expect(@user.errors.full_messages).to include("パスワードを入力してください")
       end
       it 'passwordが7文字以下であれば登録できない' do
         @user.password = '1234567'
         @user.password_confirmation = '1234567'
         @user.valid?
-        expect(@user.errors.full_messages).to include("Password is invalid")
+        expect(@user.errors.full_messages).to include("パスワードは不正な値です")
       end
       it '英字のみのパスワードでは登録できない' do
         @user.password = 'aaaaaaaa'
         @user.valid?
-        expect(@user.errors.full_messages).to include("Password confirmation doesn't match Password")
+        expect(@user.errors.full_messages).to include("パスワード（確認用）とパスワードの入力が一致しません", "パスワードは不正な値です")
       end
       it '数字のみのパスワードでは登録できない' do
         @user.password = '00000000'
         @user.valid?
-        expect(@user.errors.full_messages).to include("Password confirmation doesn't match Password")
+        expect(@user.errors.full_messages).to include("パスワード（確認用）とパスワードの入力が一致しません", "パスワードは不正な値です")
       end
       it '全角文字を含むパスワードでは登録できない' do
         @user.password = '1234AAAA'
         @user.valid?
-        expect(@user.errors.full_messages).to include("Password confirmation doesn't match Password")
+        expect(@user.errors.full_messages).to include("パスワード（確認用）とパスワードの入力が一致しません", "パスワードは不正な値です")
       end
       it 'passwordとpassword_confirmationが不一致では登録できない' do
         @user.password = '1234abcd'
         @user.password_confirmation = '5678efgh'
         @user.valid?
-        expect(@user.errors.full_messages).to include("Password confirmation doesn't match Password")
+        expect(@user.errors.full_messages).to include("パスワード（確認用）とパスワードの入力が一致しません")
       end
       it 'プロフィールが空では登録できない' do
         @user.profile = ''
         @user.valid?
-        expect(@user.errors.full_messages).to include("Profile can't be blank")
+        expect(@user.errors.full_messages).to include("プロフィールを入力してください")
       end
       it '身長が空では登録できない' do
         @user.body_height = ''
         @user.valid?
-        expect(@user.errors.full_messages).to include("Body height can't be blank")
+        expect(@user.errors.full_messages).to include("身長を入力してください")
       end
       it '身長が半角数字でなければ登録できない' do
         @user.body_height = '１５４．４'
         @user.valid?
-        expect(@user.errors.full_messages).to include("Body height is invalid")
+        expect(@user.errors.full_messages).to include("身長は不正な値です")
       end
       it '目標体重が空では登録できない' do
         @user.objective_weight = ''
         @user.valid?
-        expect(@user.errors.full_messages).to include("Objective weight can't be blank")
+        expect(@user.errors.full_messages).to include("目標体重を入力してください")
       end
       it '目標体重が半角数字でなければ登録できない' do
         @user.objective_weight = '４８．８'
         @user.valid?
-        expect(@user.errors.full_messages).to include("Objective weight is invalid")
-      end
-      it '年齢の欄に「年齢」が選択されている場合は登録できない' do
-        @user.gender_id = '年齢'
-        @user.valid?
-        expect(@user.errors.full_messages).to include("Gender 入力されていません")
-      end
-      it '性別の欄に「性別」が選択されている場合は登録できない' do
-        @user.age_id = '性別'
-        @user.valid?
-        expect(@user.errors.full_messages).to include("Age 入力されていません")
+        expect(@user.errors.full_messages).to include("目標体重は不正な値です")
       end
     end
   end

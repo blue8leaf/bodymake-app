@@ -13,29 +13,28 @@
 - リバウンドを繰り返して、しまりのない身体になってしまっている方
 
 #### 解決方法
-体重、体脂肪、バスト、二の腕、ウエスト、下腹、ヒップ、太もも、ふくらはぎ、足首と多岐にわたって入力できる。
-また、体重以外は選択して入力するため、自分の好みでサービスを使用できる。
+たくさんの入力項目があります。<br>
+項目: 体重、体脂肪、バスト、二の腕、ウエスト、下腹、ヒップ、太もも、ふくらはぎ、足首<br>
+また、体重以外は任意入力のため、自分の好みでサービスを使用できる。
 
 ## 使用画面と機能
 #### 新規登録画面
-<a href="https://gyazo.com/88171f8d6424c64f878866f474a048cf"><img src="https://i.gyazo.com/88171f8d6424c64f878866f474a048cf.gif" alt="Image from Gyazo" width="1000"/></a>
+[![Image from Gyazo](https://i.gyazo.com/88171f8d6424c64f878866f474a048cf.gif)](https://gyazo.com/88171f8d6424c64f878866f474a048cf)
 
 #### ログイン画面
-<a href="https://gyazo.com/ff71982081376f41633dad4dba08ecea"><img src="https://i.gyazo.com/ff71982081376f41633dad4dba08ecea.gif" alt="Image from Gyazo" width="1000"/></a>
+[![Image from Gyazo](https://i.gyazo.com/ff71982081376f41633dad4dba08ecea.gif)](https://gyazo.com/ff71982081376f41633dad4dba08ecea)
 
 #### 今日の記録
-<a href="https://gyazo.com/275af20fefd47f4934c38b522ae442c7"><img src="https://i.gyazo.com/275af20fefd47f4934c38b522ae442c7.gif" alt="Image from Gyazo" width="1000"/></a>
+[![Image from Gyazo](https://i.gyazo.com/275af20fefd47f4934c38b522ae442c7.gif)](https://gyazo.com/275af20fefd47f4934c38b522ae442c7)
 
 #### グラフ
-<a href="https://gyazo.com/49e6aab939cb68926163dffff064e5e8"><img src="https://i.gyazo.com/49e6aab939cb68926163dffff064e5e8.gif" alt="Image from Gyazo" width="1000"/></a>
+[![Image from Gyazo](https://i.gyazo.com/eba06cc8c1a1c5e44c32dd9c073e7fc5.gif)](https://gyazo.com/eba06cc8c1a1c5e44c32dd9c073e7fc5)
 
 #### 1週間分の記録
-<a href="https://gyazo.com/351f8787e31eed3be8f4ca3074dfa089"><img src="https://i.gyazo.com/351f8787e31eed3be8f4ca3074dfa089.gif" alt="Image from Gyazo" width="1000"/></a>
+[![Image from Gyazo](https://i.gyazo.com/84e3a432500e5c9b8063f558afa5331f.gif)](https://gyazo.com/84e3a432500e5c9b8063f558afa5331f)
 
 #### 見たい日付を選択してその日のみを表示
-<a href="https://gyazo.com/4a44d7dc6c4d547e21a70b4ecebd43b7"><img src="https://i.gyazo.com/4a44d7dc6c4d547e21a70b4ecebd43b7.gif" alt="Image from Gyazo" width="1000"/></a>
-
-#### 
+[![Image from Gyazo](https://i.gyazo.com/4a44d7dc6c4d547e21a70b4ecebd43b7.gif)](https://gyazo.com/4a44d7dc6c4d547e21a70b4ecebd43b7)
 
 ## 使用技術
 - Ruby 2.6.5

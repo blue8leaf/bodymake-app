@@ -45,10 +45,6 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: reverse;
-      -ms-flex-direction: row-reverse;
-          flex-direction: row-reverse;
 }
 
 /* 表　全体 */
@@ -95,7 +91,6 @@
 .reports-img {
   height: 200px;
   width: 200px;
-  background-color: #dedede;
   -o-object-fit: contain;
      object-fit: contain;
   display: -webkit-box;
@@ -112,7 +107,6 @@
 .report-img {
   height: 300px;
   width: 400px;
-  background-color: #dedede;
   -o-object-fit: contain;
      object-fit: contain;
   margin: 20px;

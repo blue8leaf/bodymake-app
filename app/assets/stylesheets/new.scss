@@ -7,7 +7,6 @@ $cBrown: #A57C55;
 .form-main {
   width: 100%;
   min-width: 100vh;
-  background-color: #fafafa;
   display: flex;
   justify-content: center;
 }
@@ -291,4 +290,25 @@ font-weight: bold;
   font-size: 14px;
 }
 
-/* /画像 */
+/* 画像 */
+
+img{
+  height: 150px;
+  width: 150px;
+  object-fit: contain;
+}
+
+/* google ボタン */
+
+.sns-login{
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+}
+
+.google-btn {
+  height: 10vh;
+  padding: 0;
+}
+
+/* google ボタン */

@@ -2,8 +2,23 @@ class User < ApplicationRecord
   # Include default devise modules. Others available are:
   # :confirmable, :lockable, :timeoutable, :trackable and :omniauthable
   devise :database_authenticatable, :registerable,
-         :recoverable, :rememberable, :validatable
+         :recoverable, :rememberable, :validatable, :omniauthable, omniauth_providers: [:google_oauth2]
   has_many :reports
+  has_many :sns_credentials
+
+  def self.from_omniauth(auth)
+    sns = SnsCredential.where(provider: auth.provider, uid: auth.uid).first_or_create
+    user = User.where(email: auth.info.email).first_or_initialize(
+      nickname: auth.info.name,
+        email: auth.info.email
+    )
+    # userが登録済みか
+    if user.persisted?
+      sns.user = user
+      sns.save
+    end
+    user
+  end
   
   with_options presence: true do
     validates :nickname
@@ -16,10 +31,6 @@ class User < ApplicationRecord
     end
   end
 
-  with_options allow_blank: true do
-    validates :gender_id, numericality: { other_than: 0, message: "入力されていません" }
-    validates :age_id,    numericality: { other_than: 0, message: "入力されていません" }
-  end
 
   extend ActiveHash::Associations::ActiveRecordExtensions
   belongs_to :gender
