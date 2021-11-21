@@ -15,14 +15,14 @@
 #### 解決方法
 たくさんの入力項目があります。<br>
 項目: 体重、体脂肪、バスト、二の腕、ウエスト、下腹、ヒップ、太もも、ふくらはぎ、足首<br>
-また、体重以外は任意入力のため、自分の好みでサービスを使用できる。
+また、体重以外は任意入力のため、自分の好みでサービスを使用できます。
 
 ## 使用画面と機能
 #### 新規登録画面
-[![Image from Gyazo](https://i.gyazo.com/88171f8d6424c64f878866f474a048cf.gif)](https://gyazo.com/88171f8d6424c64f878866f474a048cf)
+[![Image from Gyazo](https://i.gyazo.com/65d685e1b39aadc28632cc02012ec969.gif)](https://gyazo.com/65d685e1b39aadc28632cc02012ec969)
 
 #### ログイン画面
-[![Image from Gyazo](https://i.gyazo.com/ff71982081376f41633dad4dba08ecea.gif)](https://gyazo.com/ff71982081376f41633dad4dba08ecea)
+[![Image from Gyazo](https://i.gyazo.com/5c283eed4e338680fb4e98820f3ad016.gif)](https://gyazo.com/5c283eed4e338680fb4e98820f3ad016)
 
 #### 今日の記録
 [![Image from Gyazo](https://i.gyazo.com/275af20fefd47f4934c38b522ae442c7.gif)](https://gyazo.com/275af20fefd47f4934c38b522ae442c7)
@@ -40,8 +40,13 @@
 - Ruby 2.6.5
 - Rails 6.0.4.1
 
+#### インフラ
+- AWS
+  - S3
+
 #### Gem
 - devise（ユーザー管理）
+- omniauth-rails_csrf_protection(SNS認証)
 - rspec-rails(テスト)
 - factory_bot_rails(ダミーのインスタンスをまとめる)
 - faker(ランダムな値を生成)
