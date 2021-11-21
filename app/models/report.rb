@@ -24,13 +24,13 @@ class Report < ApplicationRecord
 
   def cannot_future
     if registration_date.present? && registration_date.future?
-      errors.add(:registration_date, "can not specify your future date")
+      errors.add(:registration_date, "を入力してください")
     end
   end
 
   def cannot_past
     if registration_date.present? && registration_date.past?
-      errors.add(:registration_date, "can not specify your past date")
+      errors.add(:registration_date, "を入力してください")
     end
   end
 end
