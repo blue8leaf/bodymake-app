@@ -1,6 +1,5 @@
 $cBlack: #555;
 
-/* 全体 index show */
 
 .report-contents {
   display: flex;
@@ -8,23 +7,44 @@ $cBlack: #555;
   align-items: center;
   margin: 40px 0;
   min-width: 100vh;
+  .report-title {
+    padding: 20px;
+    .index-unit {
+      font-size: 24px;
+      font-weight: bold;
+      color: $cBlack;
+    }
+  }
+  .report-lists {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
 }
 
-/* 全体 index show */
+/* 表 */
 
-/* 記録 */
-
-.report-title {
-  padding: 20px;
+.report-table {
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  .detail-report {
+    width: 300px;
+    height: 50px;
+    .detail-unit {
+      background-color: #f3f1ef;
+      border: 1px solid #ccc;
+      font-size: 14px;
+      text-align: center;
+      padding: 5px;
+    }
+    .detail-value {
+      padding: 14px;
+      border: 1px solid #ccc;
+      font-size: 14px;
+    }
+  }
 }
-
-.index-unit {
-  font-size: 24px;
-  font-weight: bold;
-  color: $cBlack;
-}
-
-/* 記録 */
 
 /* グラフ */
 
@@ -33,18 +53,6 @@ $cBlack: #555;
   text-align: center;
 }
 
-/* グラフ */
-
-/* 表　全体 */
-
-.report-lists {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-}
-
-/* 表　全体 */
-
 /* 編集　リンク */
 
 .link-text {
@@ -52,37 +60,6 @@ $cBlack: #555;
   font-size: 24px;
   color: $cBlack;
 }
-
-/* 編集　リンク */
-
-/* 表　index show user.show */
-
-.report-table {
-  display: flex;
-  justify-content: center;
-  margin: 0;
-}
-
-.detail-report {
-  width: 300px;
-  height: 50px;
-}
-
-.detail-unit {
-  background-color: #f3f1ef;
-  border: 1px solid #ccc;
-  font-size: 14px;
-  text-align: center;
-  padding: 5px;
-}
-
-.detail-value {
-  padding: 14px;
-  border: 1px solid #ccc;
-  font-size: 14px;
-}
-
-/* 表　index show user.show */
 
 /* index image */
 
@@ -95,8 +72,6 @@ $cBlack: #555;
   border: 2px solid #fff;
 }
 
-/* index image */
-
 /* show image */
 
 .report-img {
@@ -108,4 +83,91 @@ $cBlack: #555;
   justify-content: center;
 }
 
-/* show image */
+/* マイページ */
+
+.profile_table {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 175px 0;
+  min-width: 100vh;
+}
+
+.nickname_unit {
+  text-decoration: none;
+  font-size: 24px;
+  font-weight: bold;
+  color: #555;
+  padding-bottom: 10px;
+}
+
+/* トップページ */
+
+.top-main {
+  min-width: 100vh;
+  margin: 60px 0;
+  display: flex;
+  justify-content: center;
+  .top-wrap {
+    width: 60%;
+    .top-contents {
+      text-align: center;
+      margin: 80px 0 150px;
+      display: flex;
+      flex-direction: column;
+      .expalanation-title {
+        font-size: 64px;
+      }
+      .expalanation-sub-title {
+        font-size: 22px;
+      }
+    }
+    .form-contents {
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+    }
+    .inside-contents {
+      text-align: center;
+      margin-top: 150px;
+    }
+    .form-image {
+      display: flex;
+      justify-content: space-around;
+      margin-top: 20px;
+      .form_new {
+        width: 400px;
+        height: 400px;
+        object-fit: contain;
+      }
+      .form_report{
+        width: 600px;
+        height: 400px;
+        object-fit: contain;
+      }
+    }
+    .list-question{
+      text-align: center;
+      margin-top: 150px;
+      .top-lists {
+        list-style: circle;
+        display: inline-block;
+        text-align: left;
+        font-size: 20px;
+      }  
+    }
+    .intro-contents {
+      text-align: center;
+      margin-top: 50px;
+    }
+  }
+}
+
+/* トップページ　テキスト */
+.expalanation-text {
+  font-size: 32px;
+}
+.expalanation-sub-text{
+  font-size: 18px;
+  color: #555;
+}
