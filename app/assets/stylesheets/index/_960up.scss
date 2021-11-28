@@ -1,0 +1,101 @@
+/******************************************************************
+
+Stylesheet: 960px以上のモニタで適用
+
+******************************************************************/
+.report-contents {
+  .report-title {
+    .index-unit {
+      font-size: 24px;
+    }
+  }
+}
+
+/* 表 */
+.report-table {
+  .detail-unit {
+    padding: 10px;
+    font-size: 14px;
+  }
+  .detail-value {
+    padding: 10px;
+    font-size: 14px;
+  }
+}
+
+/* グラフ */
+.report-body{
+  width: 700px;
+}
+
+/* index image */
+.img-content {
+  .reports-img {
+    height: 150px;
+    width: 150px;
+  }
+}
+
+/* show image */
+.report-img {
+  height: 300px;
+  width: 300px;
+}
+
+/* マイページ */
+.profile_table {
+  padding: 138px 0;
+}
+
+/* トップページ */
+.top-main {
+  margin: 60px 0;
+  .top-wrap {
+    .top-contents {
+      margin: 80px 0 150px;
+      .expalanation-title {
+        font-size: 64px;
+      }
+      .expalanation-sub-title {
+        font-size: 22px;
+      }
+    }
+    .form-image {
+      margin: 40px 0;
+      .form_new {
+        width: 455px;
+        height: 480px;
+      }
+    }
+    .inside-contents {
+      margin-top: 100px;
+    }
+    .record-image {
+      margin-top: 10px;
+      .table_report{
+        width: 950px;
+        height: 500px;
+      }
+      .chart_report{
+        width: 950px;
+        height: 550px;
+      }
+    }
+    .list-question{
+      .top-lists {
+        font-size: 20px;
+        margin-top: 50px;
+      }  
+    }
+    .intro-contents {
+      margin-top: 50px;
+    }
+  }
+}
+/* トップページ　テキスト */
+.expalanation-text {
+  font-size: 32px;
+}
+.expalanation-sub-text{
+  font-size: 18px;
+}

@@ -1,0 +1,27 @@
+/******************************************************************
+
+Stylesheet: 960px以上のモニタで適用
+
+******************************************************************/
+.header {
+  padding: 30px 100px;
+  .title {
+    .header-title{
+      font-size: 18px;
+    }
+    .menu {
+      .nav {
+        .user-link {
+          font-size: 15px;
+          margin-right: 20px;
+        }
+      }
+    }
+  }
+}
+.footer {
+  padding: 12px 0;
+}
+.error-message {
+  font-size: 16px;
+}

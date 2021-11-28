@@ -1,19 +1,31 @@
+@import "overall/base";
+@import "index/base";
+@import "new/base";
+
 // スマホを横にした時
 @media screen and (min-width: 480px) {
-  
+  @import "overall/480up";
+  @import "index/480up";
+  @import "new/480up";
 }
 
 // タブレット
 @media screen and (min-width: 600px) {
-  
+  @import "overall/600up";
+  @import "index/600up";
+  @import "new/600up";
 }
 
 // タブレット or 小さいデスクトップ、ノートPC
 @media screen and (min-width: 960px) {
-  
+  @import "overall/960up";
+  @import "index/960up";
+  @import "new/960up";
 }
 
 // 通常のディスプレイ
 @media screen and (min-width: 1280px) {
-  
+  @import "overall/1280up";
+  @import "index/1280up";
+  @import "new/1280up";
 }

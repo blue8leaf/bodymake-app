@@ -1,3 +1,8 @@
+/******************************************************************
+
+Stylesheet: ベーススタイル
+
+******************************************************************/
 $cBlack: #555;
 
 
@@ -6,13 +11,12 @@ $cBlack: #555;
   flex-direction: column;
   align-items: center;
   margin: 40px 0;
-  min-width: 100vw;
   .report-title {
     padding: 20px;
     .index-unit {
-      font-size: 24px;
       font-weight: bold;
       color: $cBlack;
+      font-size: 18px;
     }
   }
   .report-lists {
@@ -23,74 +27,64 @@ $cBlack: #555;
 }
 
 /* 表 */
-
 .report-table {
   display: flex;
   justify-content: center;
-  margin: 0;
-  .detail-report {
-    width: 300px;
-    height: 50px;
-    .detail-unit {
-      background-color: #f3f1ef;
-      border: 1px solid #ccc;
-      font-size: 14px;
-      text-align: center;
-      padding: 5px;
-    }
-    .detail-value {
-      padding: 14px;
-      border: 1px solid #ccc;
-      font-size: 14px;
-    }
+  .detail-unit {
+    background-color: #f3f1ef;
+    border: 1px solid #ccc;
+    text-align: center;
+    padding: 8px 4px;
+    font-size: 12px;
+  }
+  .detail-value {
+    border: 1px solid #ccc;
+    padding: 8px 4px;
+    font-size: 12px;
   }
 }
 
 /* グラフ */
 
-.report-body{
-  margin: 30px;
+.report-body {
   text-align: center;
+  width: 400px;
 }
 
 /* 編集　リンク */
 
 .link-text {
   text-decoration: none;
-  font-size: 24px;
   color: $cBlack;
 }
 
 /* index image */
-
-.reports-img {
-  height: 200px;
-  width: 200px;
-  object-fit: contain;
+.img-content {
   display: flex;
   justify-content: center;
-  border: 2px solid #fff;
+  .reports-img {
+    object-fit: contain;
+    border: 2px solid #fff;
+    height: 125px;
+    width: 125px;
+  }
 }
 
 /* show image */
-
 .report-img {
-  height: 300px;
-  width: 400px;
   object-fit: contain;
-  margin: 20px;
   display: flex;
   justify-content: center;
+  height: 200px;
+  width: 200px;
 }
 
 /* マイページ */
-
 .profile_table {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 174px 0;
-  min-width: 100vw;
+  padding: 172px 0;
 }
 
 .nickname_unit {
@@ -98,28 +92,27 @@ $cBlack: #555;
   font-size: 24px;
   font-weight: bold;
   color: #555;
-  padding-bottom: 10px;
+  padding-bottom: 50px;
 }
 
 /* トップページ */
 
 .top-main {
-  min-width: 100vw;
-  margin: 60px 0;
   display: flex;
   justify-content: center;
+  margin: 40px 0;
   .top-wrap {
-    width: 60%;
+    width: 100%;
     .top-contents {
       text-align: center;
-      margin: 80px 0 150px;
       display: flex;
       flex-direction: column;
+      margin: 80px 0;
       .expalanation-title {
-        font-size: 64px;
+        font-size: 42px;
       }
       .expalanation-sub-title {
-        font-size: 22px;
+        font-size: 15px;
       }
     }
     .form-contents {
@@ -127,33 +120,43 @@ $cBlack: #555;
       display: flex;
       flex-direction: column;
     }
-    .inside-contents {
-      text-align: center;
-      margin-top: 150px;
-    }
     .form-image {
       display: flex;
-      justify-content: space-around;
-      margin-top: 20px;
+      justify-content: space-evenly;
+      margin-top: 10px;
       .form_new {
-        width: 400px;
-        height: 400px;
         object-fit: contain;
+        width: 235px;
+        height: 250px;
       }
-      .form_report{
-        width: 600px;
-        height: 400px;
+    }
+    .inside-contents {
+      text-align: center;
+      margin-top: 60px;
+    }
+    .record-image {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      .table_report{
         object-fit: contain;
+        width: 480px;
+        height: 300px;
+      }
+      .chart_report{
+        object-fit: contain;
+        width: 480px;
+        height: 450px;
       }
     }
     .list-question{
       text-align: center;
-      margin-top: 150px;
+      
       .top-lists {
-        list-style: circle;
+        list-style: inside circle;
         display: inline-block;
         text-align: left;
-        font-size: 20px;
+        font-size: 14px;
       }  
     }
     .intro-contents {
@@ -165,9 +168,9 @@ $cBlack: #555;
 
 /* トップページ　テキスト */
 .expalanation-text {
-  font-size: 32px;
+  font-size: 22px;
 }
 .expalanation-sub-text{
-  font-size: 18px;
   color: $cBlack;
+  font-size: 14px;
 }

@@ -1,0 +1,27 @@
+/******************************************************************
+
+Stylesheet: 600px以上のタブレットやモニタで適用
+
+******************************************************************/
+
+/* トップページ */
+.top-main {
+  .top-wrap {
+    .form-image {
+      .form_new {
+        width: 300px;
+        height: 320px;
+      }
+    }
+    .record-image {
+      .table_report{
+        width: 600px;
+        height: 330px;
+      }
+      .chart_report{
+        width: 600px;
+        height: 450px;
+      }
+    }
+  }
+}

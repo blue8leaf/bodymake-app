@@ -1,1 +1,993 @@
-/* No CSS *//*# sourceMappingURL=style.css.map */
+@charset "UTF-8";
+/******************************************************************
+
+Stylesheet: ベーススタイル
+
+******************************************************************/
+.header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-bottom: 1px solid #ccc;
+  padding: 20px 30px;
+}
+
+.header .title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+}
+
+.header .title .header-title {
+  color: #555;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+.header .title .menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.header .title .menu .nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.header .title .menu .nav .lists-left {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  list-style: none;
+}
+
+.header .title .menu .nav .lists-right {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  list-style: none;
+}
+
+.header .title .menu .nav .user-link {
+  text-decoration: none;
+  color: #555;
+  font-size: 12px;
+  margin-right: 8px;
+}
+
+.footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: #555;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: relative;
+  bottom: 0;
+  padding: 6px 0;
+}
+
+.footer .footer-title {
+  color: #fff;
+  text-decoration: none;
+}
+
+.error-alert {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.error-message {
+  color: #d33833;
+  list-style: none;
+  font-size: 12px;
+}
+
+/******************************************************************
+
+Stylesheet: ベーススタイル
+
+******************************************************************/
+.report-contents {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 40px 0;
+}
+
+.report-contents .report-title {
+  padding: 20px;
+}
+
+.report-contents .report-title .index-unit {
+  font-weight: bold;
+  color: #555;
+  font-size: 18px;
+}
+
+.report-contents .report-lists {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+/* 表 */
+.report-table {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.report-table .detail-unit {
+  background-color: #f3f1ef;
+  border: 1px solid #ccc;
+  text-align: center;
+  padding: 8px 4px;
+  font-size: 12px;
+}
+
+.report-table .detail-value {
+  border: 1px solid #ccc;
+  padding: 8px 4px;
+  font-size: 12px;
+}
+
+/* グラフ */
+.report-body {
+  text-align: center;
+  width: 400px;
+}
+
+/* 編集　リンク */
+.link-text {
+  text-decoration: none;
+  color: #555;
+}
+
+/* index image */
+.img-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.img-content .reports-img {
+  -o-object-fit: contain;
+     object-fit: contain;
+  border: 2px solid #fff;
+  height: 125px;
+  width: 125px;
+}
+
+/* show image */
+.report-img {
+  -o-object-fit: contain;
+     object-fit: contain;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 200px;
+  width: 200px;
+}
+
+/* マイページ */
+.profile_table {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 172px 0;
+}
+
+.nickname_unit {
+  text-decoration: none;
+  font-size: 24px;
+  font-weight: bold;
+  color: #555;
+  padding-bottom: 50px;
+}
+
+/* トップページ */
+.top-main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 40px 0;
+}
+
+.top-main .top-wrap {
+  width: 100%;
+}
+
+.top-main .top-wrap .top-contents {
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 80px 0;
+}
+
+.top-main .top-wrap .top-contents .expalanation-title {
+  font-size: 42px;
+}
+
+.top-main .top-wrap .top-contents .expalanation-sub-title {
+  font-size: 15px;
+}
+
+.top-main .top-wrap .form-contents {
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.top-main .top-wrap .form-image {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  margin-top: 10px;
+}
+
+.top-main .top-wrap .form-image .form_new {
+  -o-object-fit: contain;
+     object-fit: contain;
+  width: 235px;
+  height: 250px;
+}
+
+.top-main .top-wrap .inside-contents {
+  text-align: center;
+  margin-top: 60px;
+}
+
+.top-main .top-wrap .record-image {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.top-main .top-wrap .record-image .table_report {
+  -o-object-fit: contain;
+     object-fit: contain;
+  width: 480px;
+  height: 300px;
+}
+
+.top-main .top-wrap .record-image .chart_report {
+  -o-object-fit: contain;
+     object-fit: contain;
+  width: 480px;
+  height: 450px;
+}
+
+.top-main .top-wrap .list-question {
+  text-align: center;
+}
+
+.top-main .top-wrap .list-question .top-lists {
+  list-style: inside circle;
+  display: inline-block;
+  text-align: left;
+  font-size: 14px;
+}
+
+.top-main .top-wrap .intro-contents {
+  text-align: center;
+  margin-top: 50px;
+}
+
+/* トップページ　テキスト */
+.expalanation-text {
+  font-size: 22px;
+}
+
+.expalanation-sub-text {
+  color: #555;
+  font-size: 14px;
+}
+
+/******************************************************************
+
+Stylesheet: ベーススタイル
+
+******************************************************************/
+.form-main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.form-wrap {
+  width: 90%;
+  background-color: #f3f1ef;
+  border-radius: 50px;
+  margin: 50px 0;
+}
+
+.form-wrap .form-header {
+  text-align: center;
+  margin-top: 50px;
+}
+
+.form-wrap .form-header .form-header-text {
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.form-wrap .date-select {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-top: 30px;
+}
+
+.form-wrap .date-select .calender-select {
+  margin-left: 10px;
+  font-size: 12px;
+  width: 125px;
+}
+
+.form-wrap img {
+  height: 150px;
+  width: 150px;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+.form-wrap .img-upload {
+  width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 0 auto;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  padding-top: 20px;
+}
+
+.form-wrap .click-upload {
+  padding: 10px 0;
+  font-size: 12px;
+}
+
+.form-wrap .form-group {
+  width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 0 auto;
+  padding-top: 20px;
+}
+
+.form-wrap .form-report {
+  padding-bottom: 10px;
+}
+
+.form-wrap .form-report .form-report-group {
+  width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 0 auto;
+  padding-top: 10px;
+}
+
+.form-wrap .form-text-wrap {
+  width: 100%;
+  height: 20%;
+}
+
+.form-wrap .form-text-wrap .indispensable {
+  margin-left: 8px;
+  color: #d33833;
+  font-weight: bold;
+  border-radius: 2px;
+  padding: 3px;
+  font-size: 12px;
+}
+
+.form-wrap .form-text-wrap .form-any {
+  margin-left: 8px;
+  color: #888;
+  border-radius: 2px;
+  padding: 3px;
+  font-size: 12px;
+}
+
+.form-wrap .form-sub-wrap .select-box {
+  width: 180px;
+  height: 30px;
+  background-color: #fff;
+  padding-left: 20px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  font-size: 12px;
+}
+
+.form-wrap .form-sub-wrap .input-report {
+  width: 140px;
+  height: 45px;
+  padding-left: 10px;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  resize: none;
+  margin: 5px;
+  font-size: 12px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.form-wrap .form-sub-wrap .info-text {
+  color: #888;
+  font-size: 12px;
+  margin-top: 3px;
+}
+
+.form-wrap .form-sub-wrap .input-profile {
+  width: 100%;
+  padding: 16px 14px 8px;
+  margin-top: 5px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  font-size: 12px;
+  resize: none;
+}
+
+.form-wrap .form-sub-wrap .input-default {
+  width: 100%;
+  margin-top: 5px;
+  height: 48px;
+  padding-left: 10px;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  font-size: 12px;
+  resize: none;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.form-text {
+  font-weight: bold;
+  font-size: 12px;
+}
+
+/* 登録ボタン devise new */
+.register-btn {
+  width: 50%;
+  margin: 0 auto;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+/* 登録ボタン report new edit */
+.create-btn-contents {
+  width: 50%;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+/* 茶色ボタン */
+.brown-btn {
+  width: 70%;
+  background: #A57C55;
+  border: 1px solid #A57C55;
+  color: #fff;
+  line-height: 48px;
+  font-size: 12px;
+  cursor: pointer;
+  border-radius: 50px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px;
+}
+
+/* 戻るボタン report new edit */
+.back-btn {
+  width: 70%;
+  background: #888;
+  border: 1px solid #888;
+  color: #fff;
+  line-height: 48px;
+  font-size: 12px;
+  cursor: pointer;
+  border-radius: 50px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px;
+}
+
+/* 編集遷移ページボタン */
+.edit-btn-contents {
+  margin: 20px auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.edit-btn-contents .edit-brown-btn {
+  width: 40%;
+  background: #A57C55;
+  border: 1px solid #A57C55;
+  color: #fff;
+  line-height: 48px;
+  font-size: 14px;
+  cursor: pointer;
+  border-radius: 50px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px;
+}
+
+/* google ボタン */
+.sns-login {
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 10px;
+}
+
+.sns-login .google-btn {
+  height: 20px;
+  padding: 0;
+}
+
+/* ログイン */
+.login-btn {
+  width: 50%;
+  margin: 0 auto;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.login-flash-message {
+  text-align: center;
+  color: #A57C55;
+  font-size: 12px;
+}
+
+@media screen and (min-width: 480px) {
+  /******************************************************************
+
+Stylesheet: 480px以上(スマホの横向き)のモニタで適用
+
+******************************************************************/
+  /******************************************************************
+
+Stylesheet: 480px以上(スマホの横向き)のモニタで適用
+
+******************************************************************/
+  /******************************************************************
+
+Stylesheet: 480px以上(スマホの横向き)のモニタで適用
+
+******************************************************************/
+}
+
+@media screen and (min-width: 600px) {
+  /******************************************************************
+
+Stylesheet: 600px以上のタブレットやモニタで適用
+
+******************************************************************/
+  /******************************************************************
+
+Stylesheet: 600px以上のタブレットやモニタで適用
+
+******************************************************************/
+  /* トップページ */
+  .top-main .top-wrap .form-image .form_new {
+    width: 300px;
+    height: 320px;
+  }
+  .top-main .top-wrap .record-image .table_report {
+    width: 600px;
+    height: 330px;
+  }
+  .top-main .top-wrap .record-image .chart_report {
+    width: 600px;
+    height: 450px;
+  }
+  /******************************************************************
+
+Stylesheet: 600px以上のタブレットやモニタで適用
+
+******************************************************************/
+}
+
+@media screen and (min-width: 960px) {
+  /******************************************************************
+
+Stylesheet: 960px以上のモニタで適用
+
+******************************************************************/
+  .header {
+    padding: 30px 100px;
+  }
+  .header .title .header-title {
+    font-size: 18px;
+  }
+  .header .title .menu .nav .user-link {
+    font-size: 15px;
+    margin-right: 20px;
+  }
+  .footer {
+    padding: 12px 0;
+  }
+  .error-message {
+    font-size: 16px;
+  }
+  /******************************************************************
+
+Stylesheet: 960px以上のモニタで適用
+
+******************************************************************/
+  .report-contents .report-title .index-unit {
+    font-size: 24px;
+  }
+  /* 表 */
+  .report-table .detail-unit {
+    padding: 10px;
+    font-size: 14px;
+  }
+  .report-table .detail-value {
+    padding: 10px;
+    font-size: 14px;
+  }
+  /* グラフ */
+  .report-body {
+    width: 700px;
+  }
+  /* index image */
+  .img-content .reports-img {
+    height: 150px;
+    width: 150px;
+  }
+  /* show image */
+  .report-img {
+    height: 300px;
+    width: 300px;
+  }
+  /* マイページ */
+  .profile_table {
+    padding: 138px 0;
+  }
+  /* トップページ */
+  .top-main {
+    margin: 60px 0;
+  }
+  .top-main .top-wrap .top-contents {
+    margin: 80px 0 150px;
+  }
+  .top-main .top-wrap .top-contents .expalanation-title {
+    font-size: 64px;
+  }
+  .top-main .top-wrap .top-contents .expalanation-sub-title {
+    font-size: 22px;
+  }
+  .top-main .top-wrap .form-image {
+    margin: 40px 0;
+  }
+  .top-main .top-wrap .form-image .form_new {
+    width: 455px;
+    height: 480px;
+  }
+  .top-main .top-wrap .inside-contents {
+    margin-top: 100px;
+  }
+  .top-main .top-wrap .record-image {
+    margin-top: 10px;
+  }
+  .top-main .top-wrap .record-image .table_report {
+    width: 950px;
+    height: 500px;
+  }
+  .top-main .top-wrap .record-image .chart_report {
+    width: 950px;
+    height: 550px;
+  }
+  .top-main .top-wrap .list-question .top-lists {
+    font-size: 20px;
+    margin-top: 50px;
+  }
+  .top-main .top-wrap .intro-contents {
+    margin-top: 50px;
+  }
+  /* トップページ　テキスト */
+  .expalanation-text {
+    font-size: 32px;
+  }
+  .expalanation-sub-text {
+    font-size: 18px;
+  }
+  /******************************************************************
+
+Stylesheet: 960px以上のモニタで適用
+
+******************************************************************/
+  .form-wrap {
+    width: 60%;
+    margin: 52px 0;
+  }
+  .form-wrap .form-header .form-header-text {
+    font-size: 22px;
+  }
+  .form-wrap .date-select {
+    padding-top: 30px;
+  }
+  .form-wrap .date-select .calender-select {
+    font-size: 14px;
+    width: 140px;
+  }
+  .form-wrap .img-upload {
+    width: 40%;
+  }
+  .form-wrap .click-upload {
+    font-size: 14px;
+  }
+  .form-wrap .form-group {
+    width: 40%;
+  }
+  .form-wrap .form-report .form-report-group {
+    width: 40%;
+  }
+  .form-wrap .form-sub-wrap .select-box {
+    font-size: 14px;
+  }
+  .form-wrap .form-sub-wrap .input-report {
+    width: 180px;
+    font-size: 13px;
+  }
+  .form-wrap .form-sub-wrap .info-text {
+    font-size: 13px;
+  }
+  .form-wrap .form-sub-wrap .input-profile {
+    font-size: 14px;
+  }
+  .form-wrap .form-sub-wrap .input-default {
+    font-size: 13px;
+  }
+  .form-text {
+    font-size: 14px;
+  }
+  .brown-btn {
+    font-size: 14px;
+  }
+  /* 戻るボタン report new edit */
+  .back-btn {
+    font-size: 14px;
+  }
+  /* google ボタン */
+  .sns-login {
+    margin-top: 20px;
+  }
+  .sns-login .google-btn {
+    height: 30px;
+  }
+  /* ログイン */
+  .login-btn {
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  /******************************************************************
+
+Stylesheet: 1280px以上のモニタで適用
+
+******************************************************************/
+  /******************************************************************
+
+Stylesheet: 1280px以上のモニタで適用
+
+******************************************************************/
+  .report-contents {
+    margin: 60px 0;
+  }
+  /* 表 */
+  .report-table .detail-unit {
+    padding: 10px 5px;
+    font-size: 14px;
+  }
+  .report-table .detail-value {
+    padding: 10px 5px;
+    font-size: 14px;
+  }
+  /* グラフ */
+  .report-body {
+    width: 800px;
+  }
+  /* マイページ */
+  .profile_table {
+    padding: 178px 0;
+  }
+  .nickname_unit {
+    font-size: 30px;
+  }
+  /* トップページ */
+  .top-main .top-wrap {
+    width: 80%;
+  }
+  .top-main .top-wrap .form-image .form_new {
+    width: 600px;
+    height: 500px;
+  }
+  .top-main .top-wrap .record-image .table_report {
+    width: 800px;
+    height: 500px;
+  }
+  .top-main .top-wrap .record-image .chart_report {
+    width: 800px;
+    height: 650px;
+  }
+  /******************************************************************
+
+Stylesheet: 1280px以上のモニタで適用
+
+******************************************************************/
+  .form-wrap .form-header {
+    margin-top: 100px;
+  }
+  .form-wrap .img-upload {
+    width: 30%;
+  }
+  .form-wrap .form-group {
+    width: 30%;
+  }
+  .form-wrap .form-report .form-report-group {
+    width: 30%;
+  }
+  .form-wrap .form-sub-wrap .select-box {
+    font-size: 14px;
+  }
+  .form-wrap .form-sub-wrap .input-report {
+    width: 180px;
+    font-size: 13px;
+  }
+  .form-wrap .form-sub-wrap .info-text {
+    font-size: 13px;
+  }
+  .form-wrap .form-sub-wrap .input-profile {
+    font-size: 14px;
+  }
+  .form-wrap .form-sub-wrap .input-default {
+    font-size: 13px;
+  }
+  .form-text {
+    font-size: 14px;
+  }
+}
+/*# sourceMappingURL=style.css.map */

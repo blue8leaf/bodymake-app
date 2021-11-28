@@ -1,0 +1,57 @@
+/******************************************************************
+
+Stylesheet: 1280px以上のモニタで適用
+
+******************************************************************/
+
+.report-contents {
+  margin: 60px 0;
+}
+
+/* 表 */
+.report-table {
+  .detail-unit {
+    padding: 10px 5px;
+    font-size: 14px;
+  }
+  .detail-value {
+    padding: 10px 5px;
+    font-size: 14px;
+  }
+}
+
+/* グラフ */
+.report-body{
+  width: 800px;
+}
+
+/* マイページ */
+.profile_table {
+  padding: 178px 0;
+}
+.nickname_unit {
+  font-size: 30px;
+}
+
+/* トップページ */
+.top-main {
+  .top-wrap { 
+    width: 80%;
+    .form-image {
+      .form_new {
+        width: 600px;
+        height: 500px;
+      }
+    }
+    .record-image {
+      .table_report{
+        width: 800px;
+        height: 500px;
+      }
+      .chart_report{
+        width: 800px;
+        height: 650px;
+      }
+    }
+  }
+}
