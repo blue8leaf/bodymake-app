@@ -1,11 +1,12 @@
 $cWhite: #fff;
 $cLightGray: #ccc;
+$cDarkGray: #888;
 $cBrown: #A57C55;
 
 
 .form-main {
   width: 100%;
-  min-width: 100vh;
+  min-width: 100vw;
   display: flex;
   justify-content: center;
 }
@@ -85,7 +86,7 @@ $cBrown: #A57C55;
     .form-any {
       margin-left: 8px;
       padding: 3px;
-      color: #888;
+      color: $cDarkGray;
       font-size: 14px;
       border-radius: 2px;
     }
@@ -94,12 +95,11 @@ $cBrown: #A57C55;
     .select-box {
       height: 30px;
       width: 200px;
-      background-color: #fff;
+      background-color: $cWhite;
       padding-left: 20px;
       border-radius: 6px;
-      border: 1px solid #ccc;
+      border: 1px solid $cLightGray;
       font-size: 14px;
-      color: #555;
     }
     .input-report {
       width: 180px;
@@ -112,7 +112,7 @@ $cBrown: #A57C55;
       resize: none;
     }
     .info-text {
-      color: #888;
+      color: $cDarkGray;
       font-size: 13px;
       margin-top: 3px;
     }
@@ -179,8 +179,8 @@ $cBrown: #A57C55;
 
 .back-btn {
   width: 70%;
-  background: #888;
-  border: 1px solid #888;
+  background: $cDarkGray;
+  border: 1px solid $cDarkGray;
   color: $cWhite;
   line-height: 48px;
   font-size: 14px;
@@ -238,5 +238,5 @@ $cBrown: #A57C55;
 
 .login-flash-message {
   text-align: center;
-  color:  #A57C55;
+  color:  $cBrown;
 }

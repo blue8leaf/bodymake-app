@@ -1,7 +1,7 @@
 @charset "UTF-8";
 .form-main {
   width: 100%;
-  min-width: 100vh;
+  min-width: 100vw;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -135,7 +135,6 @@
   border-radius: 6px;
   border: 1px solid #ccc;
   font-size: 14px;
-  color: #555;
 }
 
 .form-wrap .form-sub-wrap .input-report {

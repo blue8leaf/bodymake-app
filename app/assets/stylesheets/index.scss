@@ -6,7 +6,7 @@ $cBlack: #555;
   flex-direction: column;
   align-items: center;
   margin: 40px 0;
-  min-width: 100vh;
+  min-width: 100vw;
   .report-title {
     padding: 20px;
     .index-unit {
@@ -89,8 +89,8 @@ $cBlack: #555;
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 175px 0;
-  min-width: 100vh;
+  padding: 174px 0;
+  min-width: 100vw;
 }
 
 .nickname_unit {
@@ -104,7 +104,7 @@ $cBlack: #555;
 /* トップページ */
 
 .top-main {
-  min-width: 100vh;
+  min-width: 100vw;
   margin: 60px 0;
   display: flex;
   justify-content: center;
@@ -169,5 +169,5 @@ $cBlack: #555;
 }
 .expalanation-sub-text{
   font-size: 18px;
-  color: #555;
+  color: $cBlack;
 }

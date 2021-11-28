@@ -11,7 +11,7 @@
       -ms-flex-align: center;
           align-items: center;
   margin: 40px 0;
-  min-width: 100vh;
+  min-width: 100vw;
 }
 
 .report-contents .report-title {
@@ -120,8 +120,8 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 175px 0;
-  min-width: 100vh;
+  padding: 174px 0;
+  min-width: 100vw;
 }
 
 .nickname_unit {
@@ -134,7 +134,7 @@
 
 /* トップページ */
 .top-main {
-  min-width: 100vh;
+  min-width: 100vw;
   margin: 60px 0;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -233,4 +233,4 @@
   font-size: 18px;
   color: #555;
 }
-/*# sourceMappingURL=index.html.css.map */
+/*# sourceMappingURL=index.css.map */

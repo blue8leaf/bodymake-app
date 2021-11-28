@@ -97,6 +97,8 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  position: relative;
+  bottom: 0;
 }
 
 .footer .footer-title {
