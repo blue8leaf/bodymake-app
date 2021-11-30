@@ -33,9 +33,6 @@
 #### 1週間分の記録
 [![Image from Gyazo](https://i.gyazo.com/84e3a432500e5c9b8063f558afa5331f.gif)](https://gyazo.com/84e3a432500e5c9b8063f558afa5331f)
 
-#### 見たい日付を選択してその日のみを表示
-[![Image from Gyazo](https://i.gyazo.com/4a44d7dc6c4d547e21a70b4ecebd43b7.gif)](https://gyazo.com/4a44d7dc6c4d547e21a70b4ecebd43b7)
-
 ## 使用技術
 - Ruby 2.6.5
 - Rails 6.0.4.1
@@ -55,6 +52,11 @@
 - image_processing(画像サイズを調整)
 - chartkick(グラフ)
 - groupdate(更新日時を取得)
+- rails-i18n(日本語翻訳)
+- omniauth, ~>1.9.1(SNSアカウントを用いて登録、ログイン)
+- omniauth-google-oauth2(Googleのomuniauth)
+- omniauth-rails_csrf_protection(CSRF脆弱性対策)
+
 
 ## ER図
 ![app](https://user-images.githubusercontent.com/86353443/141245815-b03b86ce-0070-45bc-9e8b-3b4f903280f9.png)
