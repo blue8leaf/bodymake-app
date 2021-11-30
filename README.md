@@ -1,7 +1,15 @@
 # Body make-up
 
+URL: https://body-make-up.herokuapp.com/ 
+
+[![Image from Gyazo](https://i.gyazo.com/76d4cfbc24ab92927687374a0e165c66.png)](https://gyazo.com/76d4cfbc24ab92927687374a0e165c66)
+
+<br>
+
 ## サービス概要
 身体の気になる部分のサイズを管理することで、見た目に特化してダイエットを進めていくサービスです！
+
+<br>
 
 ## Body make-upについて
 
@@ -13,9 +21,11 @@
 - リバウンドを繰り返して、しまりのない身体になってしまっている方
 
 #### 解決方法
-たくさんの入力項目があります。<br>
-項目: 体重、体脂肪、バスト、二の腕、ウエスト、下腹、ヒップ、太もも、ふくらはぎ、足首<br>
+たくさんの入力項目があります！<br>
+項目【 体重・体脂肪・バスト・二の腕・ウエスト・下腹・ヒップ・太もも・ふくらはぎ・足首 】<br>
 また、体重以外は任意入力のため、自分の好みでサービスを使用できます。
+
+<br>
 
 ## 使用画面と機能
 #### 新規登録画面
@@ -32,6 +42,8 @@
 
 #### 1週間分の記録
 [![Image from Gyazo](https://i.gyazo.com/84e3a432500e5c9b8063f558afa5331f.gif)](https://gyazo.com/84e3a432500e5c9b8063f558afa5331f)
+
+<br>
 
 ## 使用技術
 - Ruby 2.6.5
@@ -53,7 +65,7 @@
 - chartkick(グラフ)
 - groupdate(更新日時を取得)
 - rails-i18n(日本語翻訳)
-- omniauth, ~>1.9.1(SNSアカウントを用いて登録、ログイン)
+- omniauth(SNSアカウントを用いて登録、ログイン)
 - omniauth-google-oauth2(Googleのomuniauth)
 - omniauth-rails_csrf_protection(CSRF脆弱性対策)
 
