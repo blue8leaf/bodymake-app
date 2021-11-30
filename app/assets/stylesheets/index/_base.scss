@@ -140,10 +140,15 @@ $cBlack: #555;
       display: flex;
       flex-direction: column;
       align-items: center;
-      .report-sample {
+      .table-sample {
         object-fit: contain;
         width: 90%;
         height: 90%;
+      }
+      .graph-sample {
+        object-fit: contain;
+        width: 80%;
+        height: 80%;
       }
     }
     .list-question {
