@@ -26,20 +26,26 @@ URL: https://body-make-up.herokuapp.com/
 <br>
 
 ## 使用画面と機能
+#### トップ画面
+[![Image from Gyazo](https://i.gyazo.com/7c56ffe98d90440fe3be79bd2f225c84.gif)](https://gyazo.com/7c56ffe98d90440fe3be79bd2f225c84)
+
 #### 新規登録画面
-[![Image from Gyazo](https://i.gyazo.com/65d685e1b39aadc28632cc02012ec969.gif)](https://gyazo.com/65d685e1b39aadc28632cc02012ec969)
+[![Image from Gyazo](https://i.gyazo.com/7c9f888c90e609088f00a98969d1eb6e.gif)](https://gyazo.com/7c9f888c90e609088f00a98969d1eb6e)
 
 #### ログイン画面
-[![Image from Gyazo](https://i.gyazo.com/5c283eed4e338680fb4e98820f3ad016.gif)](https://gyazo.com/5c283eed4e338680fb4e98820f3ad016)
+[![Image from Gyazo](https://i.gyazo.com/32464a0b4f8b883d1782bf78e1fc33ff.png)](https://gyazo.com/32464a0b4f8b883d1782bf78e1fc33ff)
 
-#### 今日の記録
-[![Image from Gyazo](https://i.gyazo.com/275af20fefd47f4934c38b522ae442c7.gif)](https://gyazo.com/275af20fefd47f4934c38b522ae442c7)
+#### 1週間分の記録
+[![Image from Gyazo](https://i.gyazo.com/67a97d3a8fc4787622fb03b59c074906.gif)](https://gyazo.com/67a97d3a8fc4787622fb03b59c074906)
 
 #### グラフ
 [![Image from Gyazo](https://i.gyazo.com/eba06cc8c1a1c5e44c32dd9c073e7fc5.gif)](https://gyazo.com/eba06cc8c1a1c5e44c32dd9c073e7fc5)
 
-#### 1週間分の記録
-[![Image from Gyazo](https://i.gyazo.com/84e3a432500e5c9b8063f558afa5331f.gif)](https://gyazo.com/84e3a432500e5c9b8063f558afa5331f)
+#### 今日の記録
+[![Image from Gyazo](https://i.gyazo.com/bdf2fafb96a75aeb611fb0ffb39bdf37.gif)](https://gyazo.com/bdf2fafb96a75aeb611fb0ffb39bdf37)
+
+#### マイページ
+[![Image from Gyazo](https://i.gyazo.com/c53f5a52f8223a5b3ae5a8b6c72cdbb5.png)](https://gyazo.com/c53f5a52f8223a5b3ae5a8b6c72cdbb5)
 
 <br>
 
