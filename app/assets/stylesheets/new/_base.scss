@@ -27,7 +27,7 @@ $cBrown: #A57C55;
       font-size: 18px;
       }
   }
-  .date-select{
+  .date-select {
     display: flex;
     justify-content: center;
     padding-top: 30px;
@@ -37,7 +37,7 @@ $cBrown: #A57C55;
       width: 125px;
     }
   }
-  img{
+  img {
     height: 150px;
     width: 150px;
     object-fit: contain;
@@ -61,7 +61,7 @@ $cBrown: #A57C55;
     margin: 0 auto;
     padding-top: 20px;
   }
-  .form-report{
+  .form-report {
     padding-bottom: 10px;
     .form-report-group {
       width: 50%;
@@ -90,7 +90,7 @@ $cBrown: #A57C55;
       font-size: 12px;
     }
   }
-  .form-sub-wrap{
+  .form-sub-wrap {
     .select-box {
       width: 180px;
       height: 30px;
@@ -202,12 +202,12 @@ $cBrown: #A57C55;
 
 /* 編集遷移ページボタン */
 
-.edit-btn-contents{
+.edit-btn-contents {
   margin: 20px auto;
   display: flex;
   justify-content: space-around;
   align-items: center;
-  .edit-brown-btn{
+  .edit-brown-btn {
     width: 40%;
     background: $cBrown;
     border: 1px solid $cBrown;
@@ -225,7 +225,7 @@ $cBrown: #A57C55;
 
 /* google ボタン */
 
-.sns-login{
+.sns-login {
   margin: 0 auto;
   display: flex;
   justify-content: center;

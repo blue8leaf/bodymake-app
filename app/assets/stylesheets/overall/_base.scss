@@ -6,18 +6,18 @@ Stylesheet: ベーススタイル
 $cBlack: #555;
 $cWhite: #fff;
 
-.header{
+.header {
   display: flex;
   justify-content: space-between;
   align-items: center;
   border-bottom: 1px solid #ccc;
   padding: 20px 30px;
-  .title{
+  .title {
     display: flex;
     justify-content: space-between;
     align-items: center;
     width: 100%;
-    .header-title{
+    .header-title {
       color: $cBlack;
       text-decoration: none;
       font-size: 18px;
@@ -27,7 +27,7 @@ $cWhite: #fff;
       .nav {
         display: flex;
         justify-content: space-between;
-        .lists-left{
+        .lists-left {
           display: flex;
           justify-content: space-between;
           list-style: none;
@@ -56,7 +56,7 @@ body {
   min-height: 100vh;
 } 
 
-.footer{
+.footer {
   width: 100%;
   background-color: $cBlack;
   padding: 6px 0;
@@ -65,7 +65,7 @@ body {
   align-items: center;
   display: flex;
   justify-content: center;
-  .footer-title{
+  .footer-title {
     color: $cWhite;
     text-decoration: none;
   }
