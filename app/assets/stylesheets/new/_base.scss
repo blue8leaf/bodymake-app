@@ -1,0 +1,254 @@
+/******************************************************************
+
+Stylesheet: ベーススタイル
+
+******************************************************************/
+$cWhite: #fff;
+$cLightGray: #ccc;
+$cDarkGray: #888;
+$cBrown: #A57C55;
+
+
+.form-main {
+  display: flex;
+  justify-content: center;
+}
+
+.form-wrap {
+  width: 90%;
+  background-color: #f3f1ef;
+  border-radius: 50px;
+  margin: 50px 0;
+  .form-header {
+    text-align: center;
+    margin-top: 50px;
+    .form-header-text {
+      font-weight: bold;
+      font-size: 18px;
+      }
+  }
+  .date-select {
+    display: flex;
+    justify-content: center;
+    padding-top: 30px;
+    .calender-select{
+      margin-left: 10px;
+      font-size: 12px;
+      width: 125px;
+    }
+  }
+  img {
+    height: 150px;
+    width: 150px;
+    object-fit: contain;
+  }
+  .img-upload {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    flex-wrap: wrap;
+    padding-top: 20px;
+  }
+  .click-upload {
+    padding: 10px 0;
+    font-size: 12px;
+  }
+  .form-group {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    padding-top: 20px;
+  }
+  .form-report {
+    padding-bottom: 10px;
+    .form-report-group {
+      width: 50%;
+      display: flex;
+      flex-direction: column;
+      margin: 0 auto;
+      padding-top: 10px;
+    }
+  }
+  .form-text-wrap {
+    width: 100%;
+    height: 20%;
+    .indispensable {
+      margin-left: 8px;
+      color: #d33833;
+      font-weight: bold;
+      border-radius: 2px;
+      padding: 3px;
+      font-size: 12px;
+    }
+    .form-any {
+      margin-left: 8px;
+      color: $cDarkGray;
+      border-radius: 2px;
+      padding: 3px;
+      font-size: 12px;
+    }
+  }
+  .form-sub-wrap {
+    .select-box {
+      width: 180px;
+      height: 30px;
+      background-color: $cWhite;
+      padding-left: 20px;
+      border-radius: 6px;
+      border: 1px solid $cLightGray;
+      font-size: 12px;
+    }
+    .input-report {
+      width: 140px;
+      height: 45px;
+      padding-left: 10px;
+      border-radius: 10px;
+      border: 1px solid $cLightGray;
+      resize: none;
+      margin: 5px;
+      font-size: 12px;
+      align-items: center;
+    }
+    .info-text {
+      color: $cDarkGray;
+      font-size: 12px;
+      margin-top: 3px;
+    }
+    .input-profile {
+      width: 100%;
+      padding: 16px 14px 8px;
+      margin-top: 5px;
+      border-radius: 4px;
+      border: 1px solid $cLightGray;
+      font-size: 12px;
+      resize: none;
+    }
+    .input-default {
+      width: 100%;
+      margin-top: 5px;
+      height: 48px;
+      padding-left: 10px;
+      border-radius: 10px;
+      border: 1px solid $cLightGray;
+      font-size: 12px;
+      resize: none;
+      align-items: center;
+    }
+    
+  }
+}
+
+.form-text {
+  font-weight: bold;
+  font-size: 12px;
+}
+
+/* 登録ボタン devise new */
+
+.register-btn {
+  width: 50%;
+  margin: 0 auto;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  display: flex;
+  justify-content: center;
+}
+
+/* 登録ボタン report new edit */
+
+.create-btn-contents {
+  width: 50%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+/* 茶色ボタン */
+
+.brown-btn {
+  width: 70%;
+  background: $cBrown;
+  border: 1px solid $cBrown;
+  color: $cWhite;
+  line-height: 48px;
+  font-size: 12px;
+  cursor: pointer;
+  border-radius: 50px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px;
+}
+
+/* 戻るボタン report new edit */
+
+.back-btn {
+  width: 70%;
+  background: $cDarkGray;
+  border: 1px solid $cDarkGray;
+  color: $cWhite;
+  line-height: 48px;
+  font-size: 12px;
+  cursor: pointer;
+  border-radius: 50px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px;
+}
+
+/* 編集遷移ページボタン */
+
+.edit-btn-contents {
+  margin: 20px auto;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  .edit-brown-btn {
+    width: 40%;
+    background: $cBrown;
+    border: 1px solid $cBrown;
+    color: $cWhite;
+    line-height: 48px;
+    font-size: 14px;
+    cursor: pointer;
+    border-radius: 50px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px;
+  }
+}
+
+
+/* google ボタン */
+
+.sns-login {
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+  .google-btn {
+    height: 80%;
+    padding: 0;
+  }
+}
+
+/* ログイン */
+
+.login-btn {
+  width: 50%;
+  margin: 0 auto;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  display: flex;
+  justify-content: center;
+}
+
+.login-flash-message {
+  text-align: center;
+  color:  $cBrown;
+  font-size: 12px;
+}

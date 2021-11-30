@@ -1,0 +1,44 @@
+/******************************************************************
+
+Stylesheet: 1280px以上のモニタで適用
+
+******************************************************************/
+.form-wrap {
+  .form-header {
+    margin-top: 100px;
+  }
+  .img-upload {
+    width: 30%;
+  }
+  .form-group {
+    width: 30%;
+  }
+  .form-report {
+    .form-report-group {
+      width: 30%;
+    }
+  }
+  .form-sub-wrap {
+    .select-box {
+      font-size: 14px;
+    }
+    .input-report {
+      width: 180px;
+      font-size: 13px;
+    }
+    .info-text {
+      font-size: 13px;
+    }
+    .input-profile {
+      font-size: 14px;
+    }
+    .input-default {
+      font-size: 13px;
+    }
+    
+  }
+}
+
+.form-text {
+  font-size: 14px;
+}

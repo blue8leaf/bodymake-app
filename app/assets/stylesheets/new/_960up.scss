@@ -1,0 +1,85 @@
+/******************************************************************
+
+Stylesheet: 960px以上のモニタで適用
+
+******************************************************************/
+
+.form-wrap {
+  width: 60%;
+  margin: 52px 0;
+  .form-header {
+    .form-header-text {
+      font-size: 22px;
+      }
+  }
+  .date-select{
+    padding-top: 30px;
+    .calender-select{
+      font-size: 14px;
+      width: 140px;
+    }
+  }
+  .img-upload {
+    width: 40%;
+  }
+  .click-upload {
+    font-size: 14px;
+  }
+  .form-group {
+    width: 40%;
+  }
+  .form-report {
+    .form-report-group {
+      width: 40%;
+    }
+  }
+  .form-sub-wrap {
+    .select-box {
+      font-size: 14px;
+    }
+    .input-report {
+      width: 180px;
+      font-size: 13px;
+    }
+    .info-text {
+      font-size: 13px;
+    }
+    .input-profile {
+      font-size: 14px;
+    }
+    .input-default {
+      font-size: 13px;
+    }
+    
+  }
+}
+
+.form-text {
+  font-size: 14px;
+}
+
+
+.brown-btn {
+  font-size: 14px;
+}
+
+/* 戻るボタン report new edit */
+
+.back-btn {
+  font-size: 14px;
+}
+
+/* google ボタン */
+
+.sns-login{
+  margin-top: 20px;
+  .google-btn {
+    height: 100%;
+  }
+}
+
+/* ログイン */
+.login-btn {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}

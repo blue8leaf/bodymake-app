@@ -1,6 +1,6 @@
 document.addEventListener('DOMContentLoaded', function(){
-  if ( document.getElementById('report-image')){
-    const ImageList = document.getElementById('image-list');
+  if ( document.querySelector('#report-image')){
+    const ImageList = document.querySelector('#image-list');
 
     const createImageHTML = (blob) => {
        // 画像を表示するためのdiv要素を生成
@@ -15,7 +15,7 @@ document.addEventListener('DOMContentLoaded', function(){
       ImageList.appendChild(imageElement);
     };
 
-    document.getElementById('report-image').addEventListener('change', function(e){
+    document.querySelector('#report-image').addEventListener('change', function(e){
       // 画像が表示されている場合のみ、すでに存在している画像を削除
       const imageContent = document.querySelector('img');
       if (imageContent){

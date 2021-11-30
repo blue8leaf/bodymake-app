@@ -1,0 +1,173 @@
+/******************************************************************
+
+Stylesheet: ベーススタイル
+
+******************************************************************/
+$cBlack: #555;
+
+
+.report-contents {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 40px 0;
+  .report-title {
+    padding: 20px;
+    .index-unit {
+      font-weight: bold;
+      color: $cBlack;
+      font-size: 18px;
+    }
+  }
+  .report-lists {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+
+/* 表 */
+.report-table {
+  display: flex;
+  justify-content: center;
+  .detail-unit {
+    background-color: #f3f1ef;
+    border: 1px solid #ccc;
+    text-align: center;
+    padding: 8px 4px;
+    font-size: 12px;
+  }
+  .detail-value {
+    border: 1px solid #ccc;
+    padding: 8px 4px;
+    font-size: 12px;
+  }
+}
+
+/* グラフ */
+
+.report-body {
+  text-align: center;
+  width: 300px;
+}
+
+/* 編集　リンク */
+
+.link-text {
+  text-decoration: none;
+  color: $cBlack;
+}
+
+/* index image */
+.img-content {
+  display: flex;
+  justify-content: center;
+  .reports-img {
+    object-fit: contain;
+    border: 2px solid #fff;
+    height: 125px;
+    width: 125px;
+  }
+}
+
+/* show image */
+.report-img {
+  object-fit: contain;
+  display: flex;
+  justify-content: center;
+  height: 200px;
+  width: 200px;
+}
+
+/* マイページ */
+.profile_table {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 172px 0;
+}
+
+.nickname_unit {
+  text-decoration: none;
+  font-size: 24px;
+  font-weight: bold;
+  color: #555;
+  padding-bottom: 50px;
+}
+
+/* トップページ */
+
+.top-main {
+  display: flex;
+  justify-content: center;
+  margin: 40px 0;
+  .top-wrap {
+    width: 100%;
+    .top-contents {
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      margin: 80px 0;
+      .expalanation-title {
+        font-size: 42px;
+      }
+      .expalanation-sub-title {
+        font-size: 15px;
+      }
+    }
+    .form-contents {
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      margin: 60px 0 10px;
+    }
+    .form-image {
+      display: flex;
+      flex-direction: column;
+      .form-new {
+        padding-top: 10px;
+        border-radius: 10%;
+        width: 50%;
+        height: 50%;
+        margin: 0 auto;
+      }
+    }
+    .inside-contents {
+      text-align: center;
+      margin: 60px 0 10px;
+    }
+    .record-image {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      .report-sample {
+        object-fit: contain;
+        width: 90%;
+        height: 90%;
+      }
+    }
+    .list-question {
+      text-align: center;
+      padding: 20px;
+      .top-lists {
+        list-style: inside circle;
+        display: inline-block;
+        text-align: left;
+        font-size: 14px;
+      }  
+    }
+    .intro-contents {
+      text-align: center;
+      margin-top: 40px;
+    }
+  }
+}
+
+/* トップページ　テキスト */
+.expalanation-text {
+  font-size: 22px;
+}
+.expalanation-sub-text {
+  color: $cBlack;
+  font-size: 14px;
+}

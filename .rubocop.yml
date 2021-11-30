@@ -1,0 +1,44 @@
+AllCops:
+  Exclude:
+    - 'Gemfile'
+    - 'node_modules/**/*'
+    - 'bin/*'
+    - 'db/**/*'
+    - 'config/**/*'
+    - 'test/**/*'
+    - 'spec/**/*'
+
+
+# 1行の最大文字数を150字にする
+LineLength:
+  Max: 150
+
+# 文字列に値が代入されて変わっていないかチェック（無効）
+Style/FrozenStringLiteralComment:
+ Enabled: false
+
+# ドキュメントのないclass, moduleを許可する
+Style/Documentation:
+  Enabled: false
+
+# 空メソッドの場合に、1行のスタイルにしない
+Style/EmptyMethod:
+ EnforcedStyle: expanded
+
+# クラス内にクラスが定義されていないかチェック（無効）
+Style/ClassAndModuleChildren:
+ Enabled: false
+
+# 日本語でのコメントを許可
+Style/AsciiComments:
+ Enabled: false
+
+# ％i（）構文を使用していないシンボルで構成される配列リテラルをチェック（無効）
+Style/SymbolArray:
+ Enabled: false
+
+# 未使用のメソッド引数 resourceは必要な記述のため除外する
+Lint/UnusedMethodArgument:
+  Exclude:
+    - 'app/controllers/application_controller.rb'
+    - 'app/controllers/users/registrations_controller.rb'

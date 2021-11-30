@@ -3,9 +3,9 @@
 <%= form_with model: @user, url: user_registration_path, class: 'form-main', local: true do |f| %>
 <div class='form-wrap'>
   <div class='form-header'>
-    <h1 class='form-header-text'>
+    <span class='form-header-text'>
       会員情報入力
-    </h1>
+    </span>
   </div>
 
   <%# インスタンスを渡して、エラー発生時にメッセージを表示%>
@@ -21,36 +21,48 @@
       <label class="form-text">ニックネーム</label>
       <span class="indispensable">必須</span>
     </div>
-    <%= f.text_field :nickname, class:"input-default", id:"nickname", placeholder:"くまみ", maxlength:"40" , autofocus: true %>
+    <div class='form-sub-wrap'>
+      <%= f.text_field :nickname, class:"input-default", id:"nickname", placeholder:"くまみ", maxlength:"40" , autofocus: true %>
+    </div>
   </div>
   <div class="form-group">
     <div class='form-text-wrap'>
       <label class="form-text">メールアドレス</label>
       <span class="indispensable">必須</span>
     </div>
-    <%= f.email_field :email, class:"input-default", id:"email", placeholder:"mail@example.com"%>
+    <div class='form-sub-wrap'>
+      <%= f.email_field :email, class:"input-default", id:"email", placeholder:"mail@example.com"%>
+    </div>  
   </div>
+<%if @sns_id.present? %>
+  <%= hidden_field_tag :sns_auth, true %>
+<% else %>
   <div class="form-group">
     <div class='form-text-wrap'>
       <label class="form-text">パスワード</label>
       <span class="indispensable">必須</span>
     </div>
-    <%= f.password_field :password, class:"input-default", id:"password", placeholder:"半角英数字8〜32文字", autocomplete: "off" %>
-    <p class='info-text'>※英字・数字を含めた8文字以上</p>
+    <div class='form-sub-wrap'>
+      <%= f.password_field :password, class:"input-default", id:"password", placeholder:"半角英数字8〜32文字", autocomplete: "off" %>
+      <p class='info-text'>※英字・数字を含めた8文字以上</p>
+    </div>
   </div>
   <div class="form-group">
     <div class='form-text-wrap'>
       <label class="form-text">パスワード(確認)</label>
       <span class="indispensable">必須</span>
     </div>
-    <%= f.password_field :password_confirmation, class:"input-default", id:"password-confirmation", placeholder:"確認のためもう一度入力して下さい", autocomplete: "off" %>
+    <div class='form-sub-wrap'>
+      <%= f.password_field :password_confirmation, class:"input-default", id:"password-confirmation", placeholder:"確認のためもう一度入力して下さい", autocomplete: "off" %>
+    </div>
   </div>
+<% end %>
   <div class="form-group">
     <div class='form-text-wrap'>
       <label class="form-text">身長</label>
       <span class="indispensable">必須</span>
     </div>
-    <div>
+    <div class='form-sub-wrap'>
       <%= f.text_field :body_height, class:"input-report", id:"body_height", placeholder:"155.5" %>
       <span class="form-unit">cm</span>
       <p class='info-text'>※半角数字・小数点第一位まで入力できます</p>
@@ -61,18 +73,18 @@
       <label class="form-text">目標体重</label>
       <span class="indispensable">必須</span>
     </div>
-    <div>
+    <div class='form-sub-wrap'>
       <%= f.text_field :objective_weight, class:"input-report", id:"objective_weight", placeholder:"45" %>
       <span class="form-unit">kg</span>
       <p class='info-text'>※半角数字・小数点第一位まで入力できます</p>
-      </div>
+    </div>
   </div>
   <div class="form-group">
     <div class='form-text-wrap'>
       <label class="form-text">プロフィール</label>
       <span class="indispensable">必須</span>
     </div>
-    <div>
+    <div class='form-sub-wrap'>
       <%= f.text_area :profile, class:"input-profile", id:"profile", placeholder:"よろしくお願い致します。", rows:"4" ,maxlength:"500" %>
     </div>
   </div>
@@ -81,7 +93,7 @@
       <label class="form-text">性別</label>
       <span class="form-any">任意</span>
     </div>
-    <div>
+    <div class='form-sub-wrap'>
       <%= f.collection_select(:gender_id, Gender.all, :id, :name, {}, {class:"select-box"}) %>
     </div>
   </div>
@@ -90,7 +102,7 @@
       <label class="form-text">年齢</label>
       <span class="form-any">任意</span>
     </div>
-    <div>
+    <div class='form-sub-wrap'>
       <%= f.collection_select(:age_id, Age.all, :id, :name, {}, {class:"select-box"}) %>
     </div>
   </div>
