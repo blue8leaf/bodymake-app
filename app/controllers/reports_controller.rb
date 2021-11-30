@@ -1,5 +1,5 @@
 class ReportsController < ApplicationController
-  before_action :authenticate_user! 
+  before_action :authenticate_user!
 
   def index
     @reports = Report.where(user_id: current_user.id).includes(:user).last(7)
@@ -36,7 +36,9 @@ class ReportsController < ApplicationController
   end
 
   private
+
   def report_params
-    params.require(:report).permit(:image, :registration_date, :body_weight, :body_fat, :body_bust, :body_arm, :body_west, :body_belly, :body_hip, :body_thigh, :body_calf, :body_ankle).merge(user_id: current_user.id)
+    params.require(:report).permit(:image, :registration_date, :body_weight, :body_fat, :body_bust, :body_arm, :body_west, :body_belly, :body_hip,
+                                   :body_thigh, :body_calf, :body_ankle).merge(user_id: current_user.id)
   end
 end

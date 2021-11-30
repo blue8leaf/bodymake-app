@@ -23,14 +23,10 @@ class Report < ApplicationRecord
   validate :cannot_past, on: :create
 
   def cannot_future
-    if registration_date.present? && registration_date.future?
-      errors.add(:registration_date, "を入力してください")
-    end
+    errors.add(:registration_date, 'を入力してください') if registration_date.present? && registration_date.future?
   end
 
   def cannot_past
-    if registration_date.present? && registration_date.past?
-      errors.add(:registration_date, "を入力してください")
-    end
+    errors.add(:registration_date, 'を入力してください') if registration_date.present? && registration_date.past?
   end
 end
