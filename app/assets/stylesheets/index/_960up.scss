@@ -60,25 +60,22 @@ Stylesheet: 960px以上のモニタで適用
         font-size: 22px;
       }
     }
+    .form-contets {
+      margin: 60px 0 20px;
+    }
     .form-image {
-      margin: 40px 0;
-      .form_new {
-        width: 455px;
-        height: 480px;
+      .form-new {
+        width: 40%;
+        height: 40%;
       }
     }
     .inside-contents {
-      margin-top: 100px;
+      margin: 60px 0 20px;
     }
     .record-image {
-      margin-top: 10px;
-      .table_report{
-        width: 950px;
-        height: 500px;
-      }
-      .chart_report{
-        width: 950px;
-        height: 550px;
+      .report-sample {
+        width: 80%;
+        height: 80%;
       }
     }
     .list-question{

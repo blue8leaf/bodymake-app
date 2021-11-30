@@ -48,7 +48,7 @@ $cBlack: #555;
 
 .report-body {
   text-align: center;
-  width: 400px;
+  width: 300px;
 }
 
 /* 編集　リンク */
@@ -119,39 +119,36 @@ $cBlack: #555;
       text-align: center;
       display: flex;
       flex-direction: column;
+      margin: 60px 0 10px;
     }
     .form-image {
       display: flex;
-      justify-content: space-evenly;
-      margin-top: 10px;
-      .form_new {
-        object-fit: contain;
-        width: 235px;
-        height: 250px;
+      flex-direction: column;
+      .form-new {
+        padding-top: 10px;
+        border-radius: 10%;
+        width: 50%;
+        height: 50%;
+        margin: 0 auto;
       }
     }
     .inside-contents {
       text-align: center;
-      margin-top: 60px;
+      margin: 60px 0 10px;
     }
     .record-image {
       display: flex;
       flex-direction: column;
       align-items: center;
-      .table_report{
+      .report-sample {
         object-fit: contain;
-        width: 480px;
-        height: 300px;
-      }
-      .chart_report{
-        object-fit: contain;
-        width: 480px;
-        height: 450px;
+        width: 90%;
+        height: 90%;
       }
     }
     .list-question{
       text-align: center;
-      
+      padding: 20px;
       .top-lists {
         list-style: inside circle;
         display: inline-block;
@@ -161,7 +158,7 @@ $cBlack: #555;
     }
     .intro-contents {
       text-align: center;
-      margin-top: 50px;
+      margin-top: 40px;
     }
   }
 }

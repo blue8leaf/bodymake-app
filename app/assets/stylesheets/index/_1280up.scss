@@ -32,26 +32,3 @@ Stylesheet: 1280px以上のモニタで適用
 .nickname_unit {
   font-size: 30px;
 }
-
-/* トップページ */
-.top-main {
-  .top-wrap { 
-    width: 80%;
-    .form-image {
-      .form_new {
-        width: 600px;
-        height: 500px;
-      }
-    }
-    .record-image {
-      .table_report{
-        width: 800px;
-        height: 500px;
-      }
-      .chart_report{
-        width: 800px;
-        height: 650px;
-      }
-    }
-  }
-}

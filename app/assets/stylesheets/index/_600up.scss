@@ -4,24 +4,16 @@ Stylesheet: 600px以上のタブレットやモニタで適用
 
 ******************************************************************/
 
+/* グラフ */
+
+.report-body {
+  text-align: center;
+  width: 400px;
+}
+
 /* トップページ */
 .top-main {
-  .top-wrap {
-    .form-image {
-      .form_new {
-        width: 300px;
-        height: 320px;
-      }
-    }
-    .record-image {
-      .table_report{
-        width: 600px;
-        height: 330px;
-      }
-      .chart_report{
-        width: 600px;
-        height: 450px;
-      }
-    }
+  .top-wrap { 
+    width: 80%;
   }
 }
