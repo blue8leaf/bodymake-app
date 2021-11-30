@@ -339,11 +339,18 @@ Stylesheet: ベーススタイル
           align-items: center;
 }
 
-.top-main .top-wrap .record-image .report-sample {
+.top-main .top-wrap .record-image .table-sample {
   -o-object-fit: contain;
      object-fit: contain;
   width: 90%;
   height: 90%;
+}
+
+.top-main .top-wrap .record-image .graph-sample {
+  -o-object-fit: contain;
+     object-fit: contain;
+  width: 80%;
+  height: 80%;
 }
 
 .top-main .top-wrap .list-question {
@@ -809,9 +816,13 @@ Stylesheet: 960px以上のモニタで適用
   .top-main .top-wrap .inside-contents {
     margin: 60px 0 20px;
   }
-  .top-main .top-wrap .record-image .report-sample {
+  .top-main .top-wrap .record-image .table-sample {
     width: 80%;
     height: 80%;
+  }
+  .top-main .top-wrap .record-image .graph-sample {
+    width: 60%;
+    height: 60%;
   }
   .top-main .top-wrap .list-question .top-lists {
     font-size: 20px;

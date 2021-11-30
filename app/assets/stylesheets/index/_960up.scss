@@ -73,9 +73,13 @@ Stylesheet: 960px以上のモニタで適用
       margin: 60px 0 20px;
     }
     .record-image {
-      .report-sample {
+      .table-sample {
         width: 80%;
         height: 80%;
+      }
+      .graph-sample {
+        width: 60%;
+        height: 60%;
       }
     }
     .list-question{
