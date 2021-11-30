@@ -2,8 +2,6 @@
 
 URL: https://body-make-up.herokuapp.com/ 
 
-[![Image from Gyazo](https://i.gyazo.com/76d4cfbc24ab92927687374a0e165c66.png)](https://gyazo.com/76d4cfbc24ab92927687374a0e165c66)
-
 <br>
 
 ## サービス概要
