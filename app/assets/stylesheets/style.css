@@ -660,7 +660,7 @@ Stylesheet: ベーススタイル
 }
 
 .sns-login .google-btn {
-  height: 20px;
+  height: 80%;
   padding: 0;
 }
 
@@ -889,7 +889,7 @@ Stylesheet: 960px以上のモニタで適用
     margin-top: 20px;
   }
   .sns-login .google-btn {
-    height: 30px;
+    height: 100%;
   }
   /* ログイン */
   .login-btn {
