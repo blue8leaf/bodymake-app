@@ -2,6 +2,8 @@
 
 URL: https://body-make-up.herokuapp.com/ 
 
+テストアカウント ID: rarara@rarara PW: rarara000
+
 <br>
 
 ## サービス概要
